@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/pref_ui">
+        <CheckBoxPreference
+            android:key="autosave"
+            android:title="@string/pref_autosave"
+            android:summaryOn="@string/pref_autosave_summ_on"
+            android:summaryOff="@string/pref_autosave_summ_off"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="tips"
+            android:title="@string/pref_tips"
+            android:summaryOn="@string/pref_tips_summ_on"
+            android:summaryOff="@string/pref_tips_summ_off"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="screen"
+            android:title="@string/pref_screen"
+            android:summaryOn="@string/pref_screen_summ_on"
+            android:summaryOff="@string/pref_screen_summ_off"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:key="background"
+            android:title="@string/pref_background"
+            android:summaryOn="@string/pref_background_summ_on"
+            android:summaryOff="@string/pref_background_summ_off"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="scroll"
+            android:title="@string/pref_scroll"
+            android:summaryOn="@string/pref_scroll_summ_on"
+            android:summaryOff="@string/pref_scroll_summ_off"
+            android:defaultValue="true" />
+        <com.dftec.planetcon.settings.DialogPreferenceSeekBar
+            android:key="zoom_int"
+            android:title="@string/pref_zoom"
+            android:summary="@string/pref_zoom_summ"
+            android:max="10"
+            android:defaultValue="2" />
+        <com.dftec.planetcon.settings.DialogPreferenceSeekBar
+            android:key="grid_alpha_int"
+            android:title="@string/pref_grid_alpha"
+            android:summary="@string/pref_grid_alpha_summ"
+            android:max="255"
+            android:defaultValue="50" />
+        <com.dftec.planetcon.settings.DialogPreferenceSeekBar
+            android:key="text_alpha_int"
+            android:title="@string/pref_text_alpha"
+            android:summary="@string/pref_text_alpha_summ"
+            android:max="255"
+            android:defaultValue="50" />
+        <ListPreference
+            android:key="text_size"
+            android:title="@string/pref_text_size"
+            android:summary="@string/pref_text_size_summ"
+            android:dialogTitle="@string/pref_text_size_dialog"
+            android:entries="@array/pref_text_size_entries"
+            android:entryValues="@array/pref_text_size_values"
+            android:defaultValue="0" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_game_options">
+        <CheckBoxPreference
+            android:key="players_extra"
+            android:title="@string/pref_players_extra"
+            android:summaryOn="@string/pref_players_extra_summ_on"
+            android:summaryOff="@string/pref_players_extra_summ_off"
+            android:defaultValue="false"/>
+        <com.dftec.planetcon.settings.ListPlayersPreference
+            android:key="players_list"
+            android:title="@string/pref_players_list"
+            android:summary="@string/pref_players_list_summ"
+            android:defaultValue="0" />
+        <EditTextPreference
+            android:key="turns"
+            android:title="@string/pref_turns"
+            android:summary="@string/pref_turns_summ"
+            android:inputType="number"
+            android:maxLength="2"
+            android:defaultValue="20" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_default">
+        <com.dftec.planetcon.settings.DialogPreferenceReset
+            android:key="reset"
+            android:title="@string/pref_reset"
+            android:summary="@string/pref_reset_summ"
+            android:dialogTitle="@string/pref_reset_dialog"
+            android:negativeButtonText="@string/pref_reset_no"
+            android:positiveButtonText="@string/pref_reset_yes"
+            android:persistent="false" />
+    </PreferenceCategory>
+
+<!--
+        <PreferenceScreen
+            android:title="@string/pref_next_game">
+            <ListPreference
+                android:key="players"
+                android:title="@string/pref_players"
+                android:summary="@string/pref_players_summ"
+                android:dialogTitle="@string/pref_players_dialog"
+                android:entries="@array/pref_players_entries"
+                android:entryValues="@array/pref_players_values"
+                android:defaultValue="4" />
+            <ListPreference
+                android:key="radius"
+                android:title="@string/pref_radius"
+                android:summary="@string/pref_radius_summ"
+                android:dialogTitle="@string/pref_radius_dialog"
+                android:entries="@array/pref_radius_entries"
+                android:entryValues="@array/pref_radius_values"
+                android:defaultValue="7" />
+            <ListPreference
+                android:key="density"
+                android:title="@string/pref_density"
+                android:summary="@string/pref_density_summ"
+                android:dialogTitle="@string/pref_density_dialog"
+                android:entries="@array/pref_density_entries"
+                android:entryValues="@array/pref_density_values"
+                android:defaultValue="4" />
+
+            <PreferenceScreen
+                android:title="@string/pref_galaxy_menu">
+                <EditTextPreference
+                    android:key="players_custom"
+                    android:title="@string/pref_players_custom"
+                    android:summary="@string/pref_players_summ"
+                    android:dialogTitle="@string/pref_players_dialog"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:defaultValue="9"/>
+                <EditTextPreference
+                    android:key="radius_custom"
+                    android:title="@string/pref_radius_custom"
+                    android:summary="@string/pref_radius_summ"
+                    android:dialogTitle="@string/pref_radius_dialog"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:defaultValue="9"/>
+                <EditTextPreference
+                    android:key="planets_custom"
+                    android:title="@string/pref_planets_custom"
+                    android:summary="@string/pref_planets_summ"
+                    android:dialogTitle="@string/pref_planets_dialog"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:defaultValue="26"/>
+                <ListPreference
+                    android:key="positions"
+                    android:title="@string/pref_positions"
+                    android:summary="@string/pref_positions_summ"
+                    android:dialogTitle="@string/pref_positions_dialog"
+                    android:entries="@array/pref_positions_entries"
+                    android:entryValues="@array/pref_positions_values"
+                    android:defaultValue="0" />
+            </PreferenceScreen> 
+
+            <PreferenceScreen
+                android:title="@string/pref_rules_menu">
+                <ListPreference
+                    android:key="fow"
+                    android:title="@string/pref_fow"
+                    android:summary="@string/pref_fow_summ"
+                    android:dialogTitle="@string/pref_fow_dialog"
+                    android:entries="@array/pref_fow_entries"
+                    android:entryValues="@array/pref_fow_values"
+                    android:defaultValue="1" />
+                <ListPreference
+                    android:key="defense"
+                    android:title="@string/pref_defense"
+                    android:summary="@string/pref_defense_summ"
+                    android:dialogTitle="@string/pref_defense_dialog"
+                    android:entries="@array/pref_defense_entries"
+                    android:entryValues="@array/pref_defense_values"
+                    android:defaultValue="0" />
+                <ListPreference
+                    android:key="upkeep"
+                    android:title="@string/pref_upkeep"
+                    android:summary="@string/pref_upkeep_summ"
+                    android:dialogTitle="@string/pref_upkeep_dialog"
+                    android:entries="@array/pref_upkeep_entries"
+                    android:entryValues="@array/pref_upkeep_values"
+                    android:defaultValue="0" />
+            </PreferenceScreen>
+
+            <PreferenceScreen
+                android:title="@string/pref_players_menu">
+
+                <PreferenceCategory
+                    android:title="@string/pref_player1">
+                    <EditTextPreference
+                        android:key="player_id"
+                        android:title="@string/pref_players_id"
+                        android:dialogTitle="@string/pref_players_id_dialog"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:dependency="custom_ids"
+                        android:defaultValue="1"/>
+                    <EditTextPreference
+                        android:key="player1_name"
+                        android:title="@string/pref_players_name"
+                        android:dialogTitle="@string/pref_players_name_dialog"
+                        android:maxLength="3"
+                        android:defaultValue="@string/p1" />
+                    <ListPreference
+                        android:key="player1_color"
+                        android:title="@string/pref_players_color"
+                        android:dialogTitle="@string/pref_players_color_dialog"
+                        android:entries="@array/pref_players_color_entries"
+                        android:entryValues="@array/pref_players_color_values"
+                        android:defaultValue="0" />
+                    <ListPreference
+                        android:key="player1_ai"
+                        android:title="@string/pref_players_ai"
+                        android:dialogTitle="@string/pref_players_ai_dialog"
+                        android:entries="@array/pref_players_ai_entries"
+                        android:entryValues="@array/pref_players_ai_values"
+                        android:defaultValue="0" />
+                    <ListPreference
+                        android:key="player1_hostility"
+                        android:title="@string/pref_players_hostility"
+                        android:dialogTitle="@string/pref_players_hostility_dialog"
+                        android:entries="@array/pref_players_hostility_entries"
+                        android:entryValues="@array/pref_players_hostility_values"
+                        android:defaultValue="0" />
+                </PreferenceCategory>
+                
+                <PreferenceCategory
+                    android:title="@string/pref_players_rest">
+                    <ListPreference
+                        android:key="players_opponents"
+                        android:title="@string/pref_players_opponents"
+                        android:dialogTitle="@string/pref_players_opponents_dialog"
+                        android:entries="@array/pref_players_ai_entries"
+                        android:entryValues="@array/pref_players_ai_values"
+                        android:defaultValue="1" />
+                    <ListPreference
+                        android:key="ai_hostility"
+                        android:title="@string/pref_ai_hostility"
+                        android:dialogTitle="@string/pref_ai_hostility_dialog"
+                        android:entries="@array/pref_ai_hostility_entries"
+                        android:entryValues="@array/pref_ai_hostility_values"
+                        android:defaultValue="0" />
+                    <ListPreference
+                        android:key="players_hue"
+                        android:title="@string/pref_players_hue"
+                        android:dialogTitle="@string/pref_players_hue_dialog"
+                        android:entries="@array/pref_players_color_entries"
+                        android:entryValues="@array/pref_players_color_values"
+                        android:defaultValue="0" />
+                </PreferenceCategory>
+            </PreferenceScreen>
+
+        </PreferenceScreen>-->
+
+</PreferenceScreen>

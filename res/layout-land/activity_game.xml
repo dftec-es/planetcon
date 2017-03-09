@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/info_layout"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" >
+
+        <LinearLayout
+            android:id="@+id/buttons_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/end_turn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_menu_mark"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:text="@string/end_turn"
+                android:onClick="endTurnButton" />
+
+            <Button
+                android:id="@+id/open_menu"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_menu_moreoverflow"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:text="@string/open_menu"
+                android:onClick="openMenuButton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/shape_bg_frame" >
+
+            <TextView
+                android:id="@+id/info_turn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:scrollHorizontally="true"
+                android:hint="@string/info_measure_land" />
+
+            <TextView
+                android:id="@+id/info_planet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:minEms="11"
+                android:maxLines="3"
+                android:scrollHorizontally="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.dftec.planetcon.ui.GalaxyView
+        android:id="@+id/galaxy_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/info_layout"
+        android:textColor="@color/white" />
+
+    <TabHost
+        android:id="@+id/info_game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/galaxy_view"
+        android:layout_below="@id/info_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="fill"
+            android:background="@drawable/shape_bg_frame" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+
+            <com.dftec.planetcon.ui.InfoView
+                android:id="@android:id/tabcontent"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:padding="2dp" >
+
+                <GridView
+                    android:id="@+id/info_game_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:verticalSpacing="-2dp"
+                    android:scrollingCache="true"
+                    android:smoothScrollbar="true"
+                    android:alwaysDrawnWithCache="true"
+                    android:listSelector="@null"
+                    android:numColumns="auto_fit"
+                    android:requiresFadingEdge="vertical" />
+<!--        android:requiresFadingEdge requires API level 14 -->
+
+                <ScrollView
+                    android:id="@+id/info_game_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:requiresFadingEdge="vertical" >
+
+                    <TableLayout
+                        android:id="@+id/info_game_table"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+
+                </ScrollView>
+
+            </com.dftec.planetcon.ui.InfoView>
+
+        </LinearLayout>
+
+    </TabHost>
+
+    <TabHost
+        android:id="@+id/info_expanded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/info_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="fill"
+            android:background="@drawable/shape_bg_frame" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+
+            <com.dftec.planetcon.ui.InfoView
+                android:id="@android:id/tabcontent"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:padding="2dp" >
+
+                <GridView
+                    android:id="@+id/info_expanded_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:verticalSpacing="-2dp"
+                    android:scrollingCache="true"
+                    android:smoothScrollbar="true"
+                    android:alwaysDrawnWithCache="true"
+                    android:listSelector="@null"
+                    android:numColumns="auto_fit"
+                    android:requiresFadingEdge="vertical" />
+
+                <ScrollView
+                    android:id="@+id/info_expanded_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:requiresFadingEdge="vertical" >
+
+                    <TableLayout
+                        android:id="@+id/info_expanded_table"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+
+                </ScrollView>
+
+            </com.dftec.planetcon.ui.InfoView>
+
+        </LinearLayout>
+
+    </TabHost>
+
+    <LinearLayout
+        android:id="@+id/ships_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/galaxy_view"
+        android:layout_below="@id/info_layout"
+        android:layout_alignParentBottom="true"
+        android:gravity="fill"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/ships_minus"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:contentDescription="@string/ships_minus"
+                android:src="@drawable/ic_button_minus"
+                android:onClick="reduceShipsButton" />
+
+            <Button
+                android:id="@+id/ships_send"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_menu_send"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:text="@string/ships_send"
+                android:onClick="sendShipsButton" />
+
+            <ImageButton
+                android:id="@+id/ships_plus"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:contentDescription="@string/ships_plus"
+                android:src="@drawable/ic_button_plus"
+                android:onClick="increaseShipsButton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ships_frame"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/shape_bg_frame" >
+<!--        android:layout_marginRight="0dp"-->
+
+            <TextView
+                android:id="@+id/ships_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:gravity="center"
+                android:maxLines="1" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/ships_sent"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:gravity="center" />
+
+                <SeekBar
+                    android:id="@+id/ships_seekbar"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:max="100"
+                    android:progress="50" />
+
+                <TextView
+                    android:id="@+id/ships_max"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

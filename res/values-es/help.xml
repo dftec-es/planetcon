@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string-array name="help_tips">
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Enviar Naves</b>:</p>
+        <p>Mantén un rato pulsada la pantalla cerca de un planeta de tu color para seleccionarlo como origen, y sin levantar, arrastra el dedo hasta el planeta que desees como destino. Al soltar el dedo, aparecerá una barra de selección que permite elegir el número de naves que quieres mandar. Presiona sobre el botón de <i>Enviar</i> para confirmar la orden.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Cancelar Vuelo</b>:</p>
+        <p>Si vuelves a seleccionar el mismo origen y el mismo destino, puedes cambiar el número de naves que se enviarán. También puedes elegir cero naves, y presionar el botón de <i>Enviar</i>, para cancelar la orden de vuelo.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Acabar Turno</b>:</p>
+        <p>Puedes seguir enviando flotas mientras haya naves disponibles en alguno de tus planetas. Cuando hayas terminado, presiona el botón de <i>Turno</i> para que comience el turno del siguiente jugador.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Gestos</b>:</p>
+        <p><u>Pulsar</u>: Mostrar la información del planeta.</p>
+        <p>Pulsa sobre un planeta de tu color para seleccionarlo como origen, y luego pulsa sobre cualquier otro planeta para seleccionarlo como destino. Si pulsas sobre el espacio vacío, se anula la selección.
+        </p>
+        <p><u>Pulsar y desplazar</u>: Mover la pantalla sobre el tablero.</p>
+        <p><u>Pulsación larga</u>: Mostrar distancias a ese planeta.</p>
+        <p><u>Pulsación larga y arrastrar</u>: Seleccionar como origen el planeta más cercano al dedo al pulsar, y seleccionar como destino el planeta más cercano al dedo al levantar.</p>
+        <p><u>Pulsación doble</u>: Hacer zoom. O bien quitar el zoom y centrar el tablero.</p>
+        <p><u>Gesto de Zoom</u>: Ampliar o reducir la escala del tablero.</p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Tablero de la Galaxia</b>:</p>
+        <p>El tamaño de cada planeta es proporcional a su producción, y brilla más cuando está seleccionado.</p>
+        <p>En cada casilla se muestra:<br>
+        • <i>Abajo a la Izquierda</i>: Nombre del planeta.<br>
+        • <i>Abajo a la Derecha</i>: Distancia en turnos al planeta seleccionado.<br>
+        Si no hay planeta seleccionado, muestra el valor de defensa. O en planetas neutrales, el número de naves que han llegado en turnos anteriores.<br>
+        • <i>Arriba</i>: Naves actuales en el planeta.<br>
+        Para planetas enemigos muestra las naves al empezar este turno. Para planetas neutrales muestra su producción.<br>
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Panel de Información</b>:</p>
+        <p><u>Barra de Turno</u>:  Indica el número del turno actual, y el nombre y color del jugador al que le toca mover.</p>
+        <p><u>Recuadro de Planeta</u>: Muestra la información del planeta seleccionado:<br>
+        • <i>Planeta</i>: Nombre del planeta (y Propietario).<br>
+        Para jugadores IA la cantidad de comillas representa su nivel de hostilidad hacia los jugadores humanos.<br>
+        • <i>Producción</i>: Producción cada turno (y costes de Mantenimiento).<br>
+        • <i>Naves</i>: Naves actuales (y valor de Defensa).<br>
+        En planetas neutrales será un rango de posibles naves restantes (máximo dos veces su producción).<br>
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Pestañas de Información</b>:</p>
+        <p><u>Llegadas</u>: En la galaxia se muestra una animación de todas las naves que llegaron al empezar este turno.</p>
+        <p>El panel muestra la información de cada llegada, y el resultado de las batallas:<br>
+        • Nombre del planeta.<br>
+        • Suma de todas las naves que llegan de un mismo jugador.<br>
+        • Naves que había en el planeta.<br>
+        • Naves que quedan después de resolver todas las llegadas.<br>
+        • Resultado: Refuerzo (mismo jugador), Ataque (principal), Combate (ataque secundario), o Conquista (cambio de dueño).<br>
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Pestañas de Información</b>:</p>
+        <p><u>Flotas</u>: En la galaxia se muestran las flotas en vuelo del jugador actual.</p>
+        <p>El panel muestra la información de cada flota:<br>
+        • Turno de llegada.<br>
+        • Número de naves.<br>
+        • Planeta destino.<br>
+        • Planeta origen.<br>
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Pestañas de Información</b>:</p>
+        <p>Al pulsar el panel, avanza a la siguiente pestaña. Al mantener pulsado, vuelve a la pestaña de Informe (vista por defecto).</p>
+        <p><u>Informe</u>: En la galaxia se muestra el número actual de naves en cada planeta.<br>
+        El panel muestra estadísticas de cada jugador.</p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Pestañas de Información</b>:</p>
+        <p><u>Amenazas</u>: En la galaxia se muestran las naves enviadas en los turnos anteriores desde cada planeta enemigo.</p>
+        <p>El panel muestra información de cada planeta:<br>
+        • Nombre del planeta.<br>
+        • Naves al acabar el turno anterior (antes de resolver las batallas).<br>
+        • Naves al empezar este turno.<br>
+        • Valor de defensa del planeta (si esta activado).<br>
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Conquista</b>:</p>
+        <p>En su turno, un jugador puede mandar naves de sus planetas a otros planetas de la galaxia. Las naves se envían formando <i>Flotas</i> que tardan en llegar un turno por cada dos casillas de distancia entre el planeta origen y el destino.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Batallas</b>:</p>
+        <p>Cuando las naves llegan a un planeta rival, se restan a las naves que haya en dicho planeta (cada nave atacante destruye a una nave defensora y viceversa). Si queda alguna nave atacante, el planeta cambia de dueño. En caso de empate (mismo número de naves) el planeta sigue perteneciendo al defensor (aunque con cero naves).
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Refuerzos</b>:</p>
+        <p>Si las naves llegan a un planeta del mismo dueño, se suman a las naves que ya hubiera.
+        </p>
+        <p>La llegada de las flotas (refuerzos y ataques), se resuelve al empezar el turno, antes de que los jugadores realicen sus movimientos.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Combates Múltiples</b>:</p>
+        <p>Si un planeta es atacado por varios jugadores en un mismo turno, el ataque principal lo realiza el que haya mandado más naves, y es el único que puede conquistar el planeta. Los demás ataques secundarios sólo sirven para reducir el número de naves supervivientes del vencedor.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Producción</b>:</p>
+        <p>Cada planeta produce un número de naves cada turno, igual a su <i>Producción</i>, que puede valer entre 5 y 15.
+        </p>
+        <p>La producción de un planeta se suma a las naves del planeta <b>después</b> de que lleguen las flotas. Por lo que es posible conquistar un planeta completamente desprotegido con una sola nave, y ganar su producción para el siguiente turno.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Planetas Neutrales</b>:</p>
+        <p>Los planetas en gris no pertenecen a ningún jugador, son neutrales. Estos planetas no producen naves hasta que son conquistados, y comienzan con un número de naves desconocido, que puede variar entre una y dos veces su producción.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Ganador</b>:</p>
+        <p>Gana el jugador que al acabar el último turno tenga mayor producción de naves al sumar todos sus planetas.
+        </p>
+        <p>El último turno no es necesario realizar envíos de naves, sólo sirve para ver el resultado de las flotas que quedan por llegar.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Dificultad</b>:</p>
+        <p>Al aumentar la dificultad, lo que hace la IA es aumentar su hostilidad hacia los jugadores humanos, y atacarles más que al resto de IAs. Lo contrario, si se reduce la dificultad.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Vencer a la IA</b>:</p>
+        <p>Las IAs siempre tratan de atacar un poco más a los jugadores que mejor van. Para tener éxito en una partida contra muchos enemigos, trata de evitar el centro de la galaxia, o mantén tus naves en movimiento como un enjambre, para que tus rivales se debiliten unos a otros atacando planetas que tú ya has abandonado.
+        </p>
+        </div></body></html>]]>
+    </item>
+</string-array>
+
+<string name="help_content">
+<![CDATA[
+<html>
+<head>
+    <title>Ayuda</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+        body {color: white; background: black;}
+        h2 {color: white; padding-left: 2em;}
+        h3 {color: #F0E68C; padding-left: 1em;}
+        h4 {color: #EEE8AA;}
+    </style>
+</head>
+
+<body>
+    <h2>Instrucciones</h2>
+
+    <div>
+        <h3><a name="content">Contenido</a></h3>
+        <ul>
+            <li><a href="#intro">Descripción</a></li>
+            <li><a href="#rules">Reglas</a></li>
+            <li><a href="#optional">Reglas Opcionales</a></li>
+            <li><a href="#interface">Interfaz</a></li>
+            <li><a href="#credits">Créditos</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h3><a name="intro">Descripción</a></h3>
+
+        <p>PlanetCon es un sencillo juego de estrategia por turnos, de conquista galáctica, similar al Konquest de linux. Pueden jugar desde 1 hasta 9 jugadores, contra rivales IA controlados por el ordenador, o bien contra otras personas en el mismo dispositivo.
+        </p>
+        <p>Cada jugador comienza con un planeta que produce naves, y puede expandirse mandando flotas de naves a otros planetas, con el objetivo final de conquistar toda la galaxia, o de producir más naves que sus rivales cuando acabe el último turno.
+        </p>
+    </div>
+
+    <div>
+        <h3><a name="rules">Reglas</a></h3>
+
+        <h4><a name="battles">Batallas</h4>
+        <p>En su turno, un jugador puede mandar naves de sus planetas a otros planetas de la galaxia. Las naves se envían formando <em>Flotas</em> que tardan en llegar un turno por cada dos casillas de distancia entre el planeta origen y el destino.
+        </p>
+        <p>Cuando las naves llegan a un planeta rival, se restan a las naves que haya en dicho planeta (cada nave atacante destruye a una nave defensora y viceversa). Si queda alguna nave atacante, el planeta cambia de dueño. En caso de empate (mismo número de naves) el planeta sigue perteneciendo al defensor (aunque con cero naves). Si las naves llegan a un planeta del mismo dueño, se suman a las naves que ya hubiera.
+        </p>
+        <p>La llegada de las flotas (refuerzos o ataques), se resuelve al empezar el turno, antes de que los jugadores realicen sus movimientos.
+        </p>
+        <p>Si un planeta es atacado por varios jugadores en un mismo turno, el ataque principal lo realiza el que haya mandado más naves, y es el único que puede conquistar el planeta. Los demás ataques secundarios sólo sirven para reducir el número de naves supervivientes del vencedor. Si el vencedor es un planeta neutral, los ataques secundarios no tienen efecto.
+        </p>
+
+        <h4><a name="production">Producción</h4>
+        <p>Cada planeta produce un número de naves cada turno, igual a su <em>Producción</em>, que puede valer entre 5 y 15.
+        </p>
+        <p>La producción de un planeta se suma a las naves del planeta <b>después</b> de que lleguen las flotas. Por lo que es posible conquistar un planeta completamente desprotegido con una sola nave, y ganar su producción para el siguiente turno.
+        </p>
+        <p>Los planetas en gris no pertenecen a ningún jugador, son neutrales. Estos planetas no producen naves hasta que son conquistados, y comienzan con un número de naves desconocido, que puede variar entre una y dos veces su producción.
+        </p>
+
+        <h4><a name="win">Victoria</h4>
+        <p>Gana el jugador que al acabar el último turno tenga mayor producción de naves al sumar todos sus planetas. En caso de empate, se cuentan el resto de estadísticas en el orden siguiente: número actual de naves, número de planetas, cantidad de naves enviadas durante la partida (a planetas enemigos), y finalmente el puesto del jugador en el orden de turno.
+        </p>
+        <p>El último turno no se realizan envíos de naves, sólo sirve para ver el resultado de las flotas que quedan por llegar. Por ejemplo, en una partida a 20 turnos, no sirve de nada mandar flotas que vayan a llegar en el turno 21 o más tarde. El turno 19 será el último que se envíen naves, a planetas que estén a 1 de distancia, y el turno 20 se verá el resultado final.
+        </p>
+    </div>
+
+    <div>
+        <h3><a name="optional">Reglas Opcionales</a></h3>
+
+        <h4><a name="defense">Defensa</h4>
+        <p><u>Por Planeta</u>: Multiplicador al valor de las naves que defienden el planeta. Cada planeta tiene un valor entre <em>x1.0</em> y <em>x2.0</em>. Los planetas de origen siempre <em>x2.0</em>.<br>
+        Los planetas neutrales no cuentan su defensa hasta que son conquistados, y su valor dependerá de las naves neutrales que tuviera al empezar. Por ejemplo, un planeta neutral con 10 de producción y 15 naves, luego tendrá defensa <em>x1.5</em>, la misma durante toda la partida.
+        </p>
+        <p><u>Por Jugador</u>: En este caso, la defensa varía a lo largo del juego, según el número de planetas que controle el jugador. Con un planeta la defensa será <em>x2.0</em>, con dos planetas será <em>x1.5</em>, con 5 planetas será <em>x1.2</em>, y así hasta 10 planetas, que tendrán <em>x1.1</em> cada uno. Es decir, los decimales siempre sumarán 10.
+        </p>
+
+        <h4><a name="upkeep">Mantenimiento</h4>
+        <p>Es un porcentaje de las naves actuales que se resta a la producción del siguiente turno. Por ejemplo, si la regla de mantenimiento es <em>1/5</em>, entonces un jugador con 100 naves reducirá su producción total en 20 (100/5). Este coste de mantenimiento global se distribuye a cada planeta de forma proporcional a su producción. Si los costes de mantenimiento son superiores a la producción, los planetas no producirán más naves hasta que alguna sea destruida.
+        </p>
+
+        <h4><a name="fow">Niebla de Guerra</h4>
+        <p><u>Ocultar todo</u>: Cada jugador desconoce la posición de las flotas rivales hasta que llegan a su destino, y cuando llegan se desconoce su procedencia. Lo único que se puede estimar son las naves que despegan de cada planeta, comparando con las naves que había en el turno anterior.
+        </p>
+        <p><u>Mostrar Amenazas</u>: Los jugadores pueden saber de que planeta proceden las naves cuando llegan, y así se puede estimar la procedencia de todas las flotas que los rivales tienen en vuelo. Aunque esta información pierde utilidad cuantas más flotas haya en vuelo.
+        </p>
+        <p><u>Mostrar Todo</u>: Permite jugar con todas las cartas destapadas, pero el juego cambia de forma radical, y la IA no esta diseñada para aprovechar esta información.
+        </p>
+
+        <h4><a name="ai">Dificultad IA</h4>
+        <p>La inteligencia artificial nunca hace trampas, es decir que no utiliza información que esté oculta para el resto de jugadores, ni obtiene ayudas extra. Al aumentar la dificultad, lo que hace la IA es aumentar su hostilidad hacia los jugadores humanos, y atacarles más que al resto de IAs. Lo contrario, si se reduce la dificultad.
+        </p>
+        <p>En cualquier caso, las IAs siempre tratan de atacar un poco más a los jugadores que mejor van. Para tener éxito en una partida con muchos enemigos, trata de evitar el centro de la galaxia, o mantén tus naves en movimiento como un enjambre, para que tus rivales se debiliten unos a otros atacando planetas que tú ya has abandonado.
+        </p>
+        <p>Al poner el control de un jugador en modo <em>Observador</em>, puedes ver como la IA juega por él, y luego hacer tus propias correcciones cuando ésta haya acabado. Las demás IAs lo tratarán como si fuera humano.
+        </p>
+        <p>Si cambias la duración de la partida en mitad del juego, la IA no jugará de forma óptima, porque habrá planeado sus ataques actuales como si la partida fuera a ser más corta, o más larga.
+        </p>
+    </div>
+
+    <div>
+        <h3><a name="interface">Interfaz</a></h3>
+
+        <h4><a name="send">Enviar Naves</h4>
+        <p>Mantén un rato pulsada la pantalla cerca de un planeta de tu color para seleccionarlo como origen, y sin levantar, arrastra el dedo hasta el planeta que desees como destino. Al soltar el dedo, aparecerá una barra de selección que permite elegir el número de naves que quieres mandar. Presiona sobre el botón de <i>Enviar</i> para confirmar la orden.
+        </p>
+        <p>Si vuelves a seleccionar el mismo origen y el mismo destino, puedes cambiar el número de naves que se enviarán. También puedes elegir cero naves, y presionar el botón de <em>Enviar</em>, para cancelar la orden de vuelo.
+        </p>
+
+        <h4><a name="turn">Acabar Turno</a></h4>
+        <p>Puedes seguir enviando flotas mientras haya naves disponibles en alguno de tus planetas. Cuando hayas terminado, presiona el botón de <em>Turno</em> para que comience el turno del siguiente jugador local, o para que el resto de IAs acaben sus movimientos.
+        </p>
+        <p>Cuando todos los jugadores han acabado su turno, se incrementa en uno el marcador de turnos, y luego se resuelven las llegadas de todas las flotas.
+        </p>
+
+        <h4><a name="gestures">Gestos</a></h4>
+        <p><u>Pulsar</u>: Mostrar la información del planeta.</p>
+        <p>Pulsa sobre un planeta de tu color para seleccionarlo como origen, y luego pulsa sobre otro planeta para seleccionarlo como destino. Si pulsas sobre el espacio vacío, se anula la selección.
+        </p>
+        <p><u>Pulsar y desplazar</u>: Mover la pantalla sobre el tablero.</p>
+        <p><u>Pulsación larga</u>: Mostrar distancias a ese planeta.</p>
+        <p><u>Pulsación larga y arrastrar</u>: Seleccionar como origen el planeta más cercano al dedo al pulsar, y seleccionar como destino el planeta más cercano al dedo al levantar.</p>
+        <p><u>Pulsación doble</u>: Hacer zoom. O bien quitar el zoom y centrar el tablero.</p>
+        <p><u>Gesto de Zoom</u>: Ampliar o reducir la escala del tablero.</p>
+
+        <h4><a name="info">Información en Pantalla</a></h4>
+        <p><u>Tablero de la Galaxia</u>: El tamaño de cada planeta es proporcional a su producción, y brilla más cuando está seleccionado.<br>
+        En cada casilla se muestra:
+        <ul>
+            <li><u>Abajo a la Izquierda</u>: Nombre del planeta.</li>
+            <li><u>Abajo a la Derecha</u>: Distancia en turnos al planeta seleccionado.<br>
+            Si no hay planeta seleccionado, muestra el valor de defensa. O en planetas neutrales, el número de naves que han llegado en turnos anteriores.</li>
+            <li><u>Arriba</u>: Naves actuales en el planeta.<br>
+            Para planetas enemigos muestra las naves al empezar este turno. Para planetas neutrales muestra su producción.</li>
+        </ul>
+        </p>
+        <p><u>Barra de Turno</u>: Indica el número del turno actual, y el nombre y color del jugador al que le toca mover.
+        </p>
+        <p><u>Recuadro de Información</u>: Muestra la información del planeta seleccionado.
+        <ul>
+            <li><u>Planeta</u>: Nombre del planeta (y Propietario).<br>
+            Para jugadores IA la cantidad de comillas representa su nivel de hostilidad hacia los jugadores humanos.</li>
+            <li><u>Producción</u>: Producción cada turno (y costes de Mantenimiento).</li>
+            <li><u>Naves</u>: Naves actuales (y valor de Defensa).<br>
+            En planetas neutrales será un rango de posibles naves restantes (máximo dos veces su producción).</li>
+        </ul>
+        </p>
+
+        <p><u>Pestañas de información</u>: Al pulsar el panel, avanza a la siguiente pestaña. Al mantener pulsado, vuelve a la pestaña de Informe (vista por defecto):
+        <ul>
+            <li><u>Llegadas</u>: En la galaxia se muestra una animación de todas las naves que llegaron al empezar este turno.<br>
+            El panel muestra la información de cada llegada, y el resultado de las batallas:
+            <ul>
+                <li>Nombre del planeta.</li>
+                <li>Suma de todas las naves que llegan de un mismo jugador.</li>
+                <li>Naves que había en el planeta.</li>
+                <li>Naves que quedan después de resolver todas las llegadas.</li>
+                <li>Resultado: Refuerzo (mismo jugador), Ataque (principal), Combate (ataque secundario), o Conquista (cambio de dueño).</li>
+            </ul>
+            </li>
+            <li><u>Flotas</u>: En la galaxia se muestran las flotas en vuelo del jugador actual.<br>
+            El panel muestra la información de cada flota:
+            <ul>
+                <li>Turno de llegada.</li>
+                <li>Número de naves.</li>
+                <li>Planeta destino.</li>
+                <li>Planeta origen.</li>
+            </ul>
+            </li>
+            <li><u>Informe</u>: En la galaxia se muestra el número actual de naves en cada planeta.<br>
+            El panel muestra estadísticas de cada jugador.</li>
+            <li><u>Amenazas</u>: En la galaxia se muestran las naves enviadas en los turnos anteriores desde cada planeta enemigo.<br>
+            El panel muestra información de cada planeta:
+            <ul>
+                <li>Nombre del planeta.</li>
+                <li>Naves al acabar el turno anterior (antes de resolver las batallas).</li>
+                <li>Naves al empezar este turno.</li>
+                <li>Valor de defensa del planeta (si esta activado).</li>
+            </ul>
+            </li>
+        </ul>
+        </p>
+    </div>
+
+    <div>
+        <h3><a name="credits">Créditos</a></h3>
+
+        <ul>(2014) PlanetCon v1.1 para Android.
+            <li><u>Autor</u>: David Fernández.</li>
+            <li><u>Colaboradores</u>: Rubén Fernández, Sandra Fernández.</li>
+            <li><u>Agradecimientos</u>: a los creadores del plugin NBAndroid para Netbeans, y al equipo que creó el Konquest para Linux.</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
+]]>
+</string>
+
+</resources>

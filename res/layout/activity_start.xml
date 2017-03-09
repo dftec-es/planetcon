@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/animated"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:focusableInTouchMode="true"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left" >
+
+            <Button
+                android:id="@+id/button_menu_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:typeface="monospace"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableLeft="@drawable/ic_menu_back"
+                android:hint="@string/dialog_start"
+                android:text="@string/dialog_cancel"
+                android:onClick="menuBack" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/button_menu_revert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:typeface="monospace"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableLeft="@drawable/ic_menu_revert"
+                android:text="@string/dialog_revert"
+                android:onClick="menuRevert" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right" >
+
+            <Button
+                android:id="@+id/button_menu_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:typeface="monospace"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableRight="@drawable/ic_menu_play_clip"
+                android:hint="@string/dialog_back"
+                android:text="@string/dialog_start"
+                android:onClick="menuStart" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--ListView does not seem to measure childs. The wrap_content of linearlayout container
+ requires fixed dimension in the listview to do something-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:baselineAligned="false" >
+
+        <ListView
+            android:id="@+id/list_players"
+            android:layout_width="@dimen/list_players_width"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

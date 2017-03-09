@@ -15,8 +15,7 @@ enjoyable to play, no easily predictable, and able to run on low spec mobiles.
 
 # LICENSE
 
-PlanetCon is a turn based strategy game for android.
-Copyright (C) 2014-2017  David Fernandez <dftec.es@gmail.com>
+Copyright 2014-2017  David Fernandez <dftec.es@gmail.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -27,7 +26,7 @@ This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-See the GNU General Public License for more details, that you can find 
+For more details, see the GNU General Public License, that you can find 
 in the file LICENSE, or at <http://www.gnu.org/licenses/>.
 
 The source code of this program includes files with a more permissive license: 

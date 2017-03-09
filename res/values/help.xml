@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string-array name="help_tips">
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Sending Ships</b>:</p>
+        <p>Press and hold near a planet of your color to select it as source, then drag, and drop over the desired target planet. When you release the finger, it will appear a seek bar that lets you choose the number of ships that you want to send. Press the <i>Send</i> button to confirm the launch.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Cancelling Flight</b>:</p>
+        <p>If you select the same origin and the same destination again, you can change the number of ships that will be sent. You may also choose zero ships, and then press the <i>Send</i> button to cancel the launching order.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Ending Turn</b>:</p>
+        <p>You may continue sending fleets as long as there are available ships in some of your planets. When you are done, press the <i>Turn</i> button to start the turn of the next player.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Gestures</b>:</p>
+        <p><u>Tap</u>: Show the information of the planet.</p>
+        <p>Tap on a planet of your own color to select it as source, and then tap on any other planet to select it as target. If you tap on void space, it cancels the selection.
+        </p>
+        <p><u>Scroll</u>: Scroll the board.</p>
+        <p><u>Long Press</u>: Show distances to that planet.</p>
+        <p><u>Long Press and Drag</u>: Select as source the planet closer to the touch point, and select as target the planet closer to the release point.</p>
+        <p><u>Double Tap</u>: Fixed zoom. Or remove the zoom and center the screen.</p>
+        <p><u>Pinch Zoom</u>: Zoom in, or zoom out.</p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Galaxy Board</b>:</p>
+        <p>The size of each planet is proportional to its production, and it appears highlighted when selected.</p>
+        <p>Each tile shows:<br>
+        • <i>Bottom left</i>: Name of the planet.<br>
+        • <i>Bottom right</i>: Distance to the selected planet.<br>
+        When no planet selected, it shows the defense value. Or in neutral planets, the ships arrived in previous turns.<br>
+        • <i>Top</i>: Ships currently in the planet.<br>
+        For enemy planets, it shows the ships at start of this turn. For neutral planets, it shows its production.<br>
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Information Panel</b>:</p>
+        <p><u>Turn Bar</u>: Shows the current turn, and the name and color of the current player.</p>
+        <p><u>Planet Panel</u>: Shows the information of the selected planet:<br>
+        • <i>Planet</i>: Name of the planet (and Owner).<br>
+        For AI players the amount of quotes represents its level of hostility towards human players.<br>
+        • <i>Production</i>: Production each turn (and Upkeep costs).<br>
+        • <i>Ships</i>: Number of ships (and Defense multiplier).<br>
+        In neutral planets it will be a range of possible remaining ships (up to twice the production).<br>
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Information Tabs</b>:</p>
+        <p><u>Arrivals</u>: The galaxy board shows an animation of all ships that arrived at the start of this turn.</p>
+        <p>The panel shows information of each arrival, and the result of the battles:<br>
+        • Planet name.<br>
+        • Sum of all ships arrived from the same player.<br>
+        • Ships defending the planet.<br>
+        • Ships remaining after resolving all arrivals.<br>
+        • Result: Reinforcement (same player), Attack (primary), Combat (secondary attack), or Conquest (change of owner).<br>
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Information Tabs</b>:</p>
+        <p><u>Fleets</u>: The galaxy board shows the fleets in flight of the current player.</p>
+        <p>The panel shows information of each fleet:<br>
+        • Turn of arrival.<br>
+        • Number of ships.<br>
+        • Target planet.<br>
+        • Source planet.<br>
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Information Tabs</b>:</p>
+        <p>A single tap in the panel will advance to next tab. A long press will return to the Stats tab (default view).</p>
+        <p><u>Stats</u>: The galaxy board shows the current number of ships in each planet.<br>
+        The panel shows statistics of each player.</p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Information Tabs</b>:</p>
+        <p><u>Threats</u>: The galaxy board shows the fleets sent in the previous turns by each enemy planet.</p>
+        <p>The panel shows information of each planet:<br>
+        • Planet name.<br>
+        • Ships at the end of previous turn (before the battles).<br>
+        • Ships at the start of this turn.<br>
+        • Defense of the planet (if enabled).<br>
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Conquering</b>:</p>
+        <p>On his turn, a player may send ships from his planets to other planets in the galaxy. The ships are sent in <i>Fleets</i> that travel from the origin to the destination and the journey takes one turn for each 2 tiles of distance.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Battles</b>:</p>
+        <p>When the ships arrive at a rival planet, they are subtracted from the ships placed in the planet (each attacking ship destroys one defending ship). If there were more ships attacking than defending, the planet changes ownership. If they were even (same number of ships), the defender remains the owner of the planet (albeit with zero ships).
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Reinforcements</b>:</p>
+        <p>If there are ships arriving to a planet of the same owner, then they are summed to the ships of the planet.
+        </p>
+        <p>The arrivals of the fleets (reinforcements and attacks) are resolved at the beginning of the turn, before the players make their moves.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Multiple Combats</b>:</p>
+        <p>If a planet is attacked by several players in the same turn, the fleets of the player who sent more ships will perform the primary attack, and this will be the only attack that can conquer the planet. The other attacks will simply reduce the number of remaining ships of the winner.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Production</b>:</p>
+        <p>Every planet produces each turn a number of ships, equal to its <i>Production</i>, that may vary between 5 and 15.
+        </p>
+        <p>The production of the planets is summed <b>after</b> they are resolved the arrivals of the fleets. Thus it is possible to conquer an unprotected planet with one single ship, and then to gain its production for the next turn.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Neutral Planets</b>:</p>
+        <p>The planets in gray do not belong to any player, they are neutral. These planets do not produce ships until they are conquered, and they start with an unknown number of ships, that may vary between its production and twice its production.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Winner</b>:</p>
+        <p>The winner of the game is the player with the highest production (summing all planets) at the end of the last turn.
+        </p>
+        <p>In the last turn it is not necessary to continue sending ships, the only purpose of that turn is to watch the arrival of the remaining fleets.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Difficulty</b>:</p>
+        <p>When you increase the difficulty, it just changes the hostility of the AI against human players, so it tends to attack them more than to other AIs. The opposite, if you reduce the difficulty.
+        </p>
+        </div></body></html>]]>
+    </item>
+    <item>
+        <![CDATA[<html><body><div>
+        <p><b>Defeating the AI</b>:</p>
+        <p>The AIs always try to attack a bit more to players that are ahead in the race to win. In order to succeed in a game against many enemies, try to avoid the center of the galaxy, or keep moving your ships like a swarm, so your rivals weaken each other by attacking planets that you had already abandoned.
+        </p>
+        </div></body></html>]]>
+    </item>
+</string-array>
+
+<string name="help_content">
+<![CDATA[
+<html>
+<head>
+    <title>Help</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+        body {color: white; background: black;}
+        h2 {color: white; padding-left: 2em;}
+        h3 {color: #F0E68C; padding-left: 1em;}
+        h4 {color: #EEE8AA;}
+    </style>
+</head>
+
+<body>
+    <h2>Instructions</h2>
+
+    <div>
+        <h3><a name="content">Content</a></h3>
+        <ul>
+            <li><a href="#intro">Description</a></li>
+            <li><a href="#rules">Rules</a></li>
+            <li><a href="#optional">Optional Rules</a></li>
+            <li><a href="#interface">Interface</a></li>
+            <li><a href="#credits">Credits</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h3><a name="intro">Description</a></h3>
+
+        <p>PlanetCon is a simple turn based strategy game, of galactic conquest, similar to Konquest for Linux. It can be played by 1 to 9 players, against AI adversaries controlled by the computer, or against other people in the same device.
+        </p>
+        <p>Every player starts with a planet that produces an amount of ships each turn, and can send fleets of ships in order to conquer other planets, with the final objective of conquering the whole galaxy, or to produce more ships than the opponents at the end of the last turn.
+        </p>
+    </div>
+
+    <div>
+        <h3><a name="rules">Rules</a></h3>
+
+        <h4><a name="battles">Battles</h4>
+        <p>On his turn, a player may send ships from his planets to other planets in the galaxy. The ships are sent in <em>Fleets</em> that travel from the origin to the destination and the journey takes one turn for each 2 tiles of distance.
+        </p>
+        <p>When the ships arrive at a rival planet, they are subtracted from the ships placed in the planet (each attacking ship destroys one defending ship). If there were more ships attacking than defending, the planet changes ownership. If they were even (same number of ships), the defender remains the owner of the planet (albeit with zero ships). If there are ships arriving to a planet of the same owner, then they are summed to the ships of the planet.
+        </p>
+        <p>The arrivals of the fleets (reinforcements and attacks), are resolved at the beginning of the turn, before the players make their moves.
+        </p>
+        <p>If a planet is attacked by several players in the same turn, the fleets of the player who sent more ships will perform the primary attack, and this will be the only attack that can conquer the planet. The other attacks will simply reduce the number of remaining ships of the winner. If the winning ships are from a neutral planet, the secondary attacks will have no effect.
+        </p>
+
+        <h4><a name="production">Production</h4>
+        <p>Every planet produces each turn a number of ships, equal to its <em>Production</em>, that may vary between 5 and 15.
+        </p>
+        <p>The production of the planets is summed <b>after</b> they are resolved the arrivals of the fleets. Thus it is possible to conquer an unprotected planet with one single ship, and then to gain its production for the next turn.
+        </p>
+        <p>The planets in gray do not belong to any player, they are neutral. These planets do not produce ships until they are conquered, and they start with an unknown number of ships, that may vary between its production and twice its production.
+        </p>
+
+        <h4><a name="win">Victory</h4>
+        <p>The winner of the game is the player with the highest production (summing all planets) at the end of the last turn. In case of tie, they are taken into account the rest of stats, in the following order: number of current ships, number of planets, amount of ships sent during the game (to enemy planets), and finally the place of the player in the turn order.
+        </p>
+        <p>In the last turn it is useless to continue sending ships, that turn only serves to watch the arrival of the remaining fleets. For example, in a game to 20 turns, it is useless to send ships that are going to arrive at turn 21 or later. In this case, turn 19 will be the last one used to send ships, to planets that are one distance away, and turn 20 is meant to watch the result of the final battles.
+        </p>
+    </div>
+
+    <div>
+        <h3><a name="optional">Optional Rules</a></h3>
+
+        <h4><a name="defense">Defense</h4>
+        <p><u>By Planet</u>: Multiplier to the effectiveness of the ships defending a planet. Each planet start with a defense value between <em>x1.0</em> and <em>x2.0</em>. The home planets always <em>x2.0</em>.<br>
+        Neutral planets do not apply this defense until they are conquered, and the value will be linked to the ships placed in the planet at start. For example, a planet with 10 production and 15 starting ships, will grant a defense <em>x1.5</em> when conquered, the same along the whole game.
+        </p>
+        <p><u>By Player</u>: In this case, the defense varies along the game, depending on the number of planets controlled by the player. With one planet, the defense will be <em>x2.0</em>, with two planets it will be <em>x1.5</em>, with 5 planets it will be <em>x1.2</em>, and so on, until 10 planets, that will get defense <em>x1.1</em> each. That is, the decimals always sum 10.
+        </p>
+
+        <h4><a name="upkeep">Upkeep</h4>
+        <p>It is a percentage of the current ships that is subtracted to the production of the next turn. For example, if the upkeep is set to <em>1/5</em>, then a player with 100 ships will reduce his production by 20 (100/5). This global upkeep cost is distributed to every planet in proportion to their production. If upkeep costs are greater than the production, the planets can not produce more ships until some of the active ships are destroyed.
+        </p>
+
+        <h4><a name="fow">Fog of War</h4>
+        <p><u>All Unknown</u>: A player is not aware of the situation of the enemy fleets until they reach their destination, and the origin of each fleet is unknown even after they arrive. The only available information is the number of ships that leave each planet each turn, by comparison with the ships in the previous turn.
+        </p>
+        <p><u>Show Threats</u>: In this case the players know the origin of the fleets when they arrive, so it is possible to estimate the amount and origin of all the enemy fleets currently in flight. Although this information is less useful the more the fleets in flight.
+        </p>
+        <p><u>All Known</u>: It allows to watch all enemy fleets, but this changes drastically the game, and the AI is not designed to take advantage of this extra information.
+        </p>
+
+        <h4><a name="ai">AI Difficulty</h4>
+        <p>The artificial intelligence does not cheat, it never takes advantage of information that is not available for the rest of players, nor it gains any extra bonus. When you increase the difficulty, it just changes the hostility of the AI against human players, so it tends to attack them more than to other AIs. The opposite, if you reduce the difficulty.
+        </p>
+        <p>In any case, the AIs always try to attack a bit more to players that are ahead in the race to win. In order to succeed in a game against many enemies, try to avoid the center of the galaxy, or keep moving your ships like a swarm, so your rivals weaken each other by attacking planets that you had already abandoned.
+        </p>
+        <p>When you set the player control as <em>Observer</em>, you can watch how the AI plays for him, with the possibility to make your own moves afterwards. Other AI players will treat him as a human.
+        </p>
+        <p>If you change the length of the game while playing, the AIs will not play optimally because they have planned their current attacks as if the game was going to be sorter, or longer.
+        </p>
+    </div>
+
+    <div>
+        <h3><a name="interface">Interface</a></h3>
+
+        <h4><a name="send">Sending Ships</h4>
+        <p>Press and hold near a planet of your color to select it as source, then drag, and drop over the desired target planet. When you release the finger, it will appear a seek bar that lets you choose the number of ships that you want to send. Press the <i>Send</i> button to confirm the launch.
+        </p>
+        <p>If you select the same origin and the same destination again, you can change the number of ships that will be sent. You may also choose zero ships, and then press the <em>Send</em> button to cancel the launching order.
+        </p>
+
+        <h4><a name="turn">Ending Turn</a></h4>
+        <p>You may continue sending fleets as long as there are available ships in some of your planets. When you are done, press the <em>Turn</em> button to start the turn of the next local player, or to start processing the movements of the next AIs.
+        </p>
+        <p>When all players have finished their movements, it is incremented by one the turn marker, and then they are resolved at once the arrivals of all the fleets.
+        </p>
+
+        <h4><a name="gestures">Gestures</a></h4>
+        <p><u>Tap</u>: Show the information of the planet.</p>
+        <p>Tap on a planet of your own color to select it as source, and then tap on any other planet to select it as target. If you tap on void space, it cancels the selection.
+        </p>
+        <p><u>Scroll</u>: Scroll the board.</p>
+        <p><u>Long Press</u>: Show distances to that planet.</p>
+        <p><u>Long Press and Drag</u>: Select as source the planet closer to the touch point, and select as target the planet closer to the release point.</p>
+        <p><u>Double Tap</u>: Fixed zoom. Or remove the zoom and center the screen.</p>
+        <p><u>Pinch Zoom</u>: Zoom in, or zoom out.</p>
+
+        <h4><a name="info">Information on Screen</a></h4>
+        <p><u>Galaxy Board</u>: The size of each planet is proportional to its production, and it appears highlighted when selected.<br>
+        Each tile shows:
+        <ul>
+            <li><u>Bottom left</u>: Name of the planet.</li>
+            <li><u>Bottom right</u>: Distance to the selected planet.<br>
+            When no planet selected, it shows the defense value. Or in neutral planets, the ships arrived in previous turns.</li>
+            <li><u>Top</u>: Ships currently in the planet.<br>
+            For enemy planets, it shows the ships at start of this turn. For neutral planets, it shows its production.</li>
+        </ul>
+        </p>
+        <p><u>Turn Bar</u>: Shows the current turn, and the name and color of the current player.
+        </p>
+        <p><u>Information Panel</u>: Shows the information of the selected planet.
+        <ul>
+            <li><u>Planet</u>: Name of the planet (and Owner).<br>
+            For AI players the amount of quotes represents its level of hostility towards human players.</li>
+            <li><u>Production</u>: Production each turn (and Upkeep costs).</li>
+            <li><u>Ships</u>: Number of ships (and Defense multiplier).<br>
+            In neutral planets it will be a range of possible remaining ships (up to twice the production).</li>
+        </ul>
+        </p>
+
+        <p><u>Information Tabs</u>: A single tap in the panel will advance to next tab. A long press will return to the Stats tab (default view):
+        <ul>
+            <li><u>Arrivals</u>: The galaxy board shows an animation of all ships that arrived at the start of this turn.<br>
+            The panel shows information of each arrival, and the result of the battles:
+            <ul>
+                <li>Planet name.</li>
+                <li>Sum of all ships arrived from the same player.</li>
+                <li>Ships defending the planet.</li>
+                <li>Ships remaining after resolving all arrivals.</li>
+                <li>Result: Reinforcement (same player), Attack (primary), Combat (secondary attack), or Conquest (change of owner).</li>
+            </ul>
+            </li>
+            <li><u>Fleets</u>: The galaxy board shows the fleets in flight of the current player.<br>
+            The panel shows information of each fleet:
+            <ul>
+                <li>Turn of arrival.</li>
+                <li>Number of ships.</li>
+                <li>Target planet.</li>
+                <li>Source planet.</li>
+            </ul>
+            </li>
+            <li><u>Stats</u>: The galaxy board shows the current number of ships in each planet.<br>
+            The panel shows statistics of each player.
+            </li>
+            <li><u>Threats</u>: The galaxy board shows the fleets sent in the previous turns by each enemy planet.<br>
+            The panel shows information of each planet:
+            <ul>
+                <li>Planet name.</li>
+                <li>Ships at the end of previous turn (before the battles).</li>
+                <li>Ships at the start of this turn.</li>
+                <li>Defense of the planet (if enabled).</li>
+            </ul>
+            </li>
+        </ul>
+        </p>
+    </div>
+
+    <div>
+        <h3><a name="credits">Credits</a></h3>
+
+        <ul>(2014) PlanetCon v1.1 for Android.
+            <li><u>Author</u>: David Fernandez.</li>
+            <li><u>Contributors</u>: Ruben Fernandez, Sandra Fernandez.</li>
+            <li><u>Acknowledgments</u>: to the creators of the plugin NBAndroid for Netbeans, and to the team that created Konquest for Linux.</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
+]]>
+</string>
+
+</resources>

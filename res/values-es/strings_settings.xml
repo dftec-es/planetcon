@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!-- Strings related to Settings -->
+
+    <string name="pref_ui">Interfaz de Usuario</string>
+    <string name="pref_game_options">Opciones de Juego</string>
+    <string name="pref_default">Preferencias</string>
+
+    <string name="pref_galaxy_menu">Personalizar Galaxia</string>
+    <string name="pref_rules_menu">Personalizar Reglas</string>
+    <string name="pref_players_menu">Personalizar Jugadores</string>
+
+    <!-- Preferences screen -->
+
+    <string name="pref_autosave">Auto Salvar</string>
+    <string name="pref_autosave_summ_on">Se salva la partida en la SD automaticamente al acabar el turno</string>
+    <string name="pref_autosave_summ_off">No se salva en la SD automaticamente</string>
+
+    <string name="pref_tips">Ayuda</string>
+    <string name="pref_tips_summ_on">Mostrar mensajes de ayuda al empezar cada turno</string>
+    <string name="pref_tips_summ_off">Dejar de mostrar los mensajes de ayuda</string>
+
+    <string name="pref_screen">Mantener Despierto</string>
+    <string name="pref_screen_summ_on">La pantalla permanece encendida mientras se vea el tablero de juego</string>
+    <string name="pref_screen_summ_off">La pantalla se apaga si esta inactiva, como de costumbre</string>
+
+    <string name="pref_background">Fondo</string>
+    <string name="pref_background_summ_on">Fondo de estrellas: visible</string>
+    <string name="pref_background_summ_off">Fondo de estrellas: oculto</string>
+
+    <string name="pref_scroll">Desplazar</string>
+    <string name="pref_scroll_summ_on">Gesto de desplazamiento del tablero: activado</string>
+    <string name="pref_scroll_summ_off">Gesto de desplazamiento del tablero: bloqueado</string>
+
+    <string name="pref_zoom">Zoom</string>
+    <string name="pref_zoom_summ">Numero de aumentos al pulsar dos veces seguidas</string>
+
+    <string name="pref_grid_alpha">Recuadros</string>
+    <string name="pref_grid_alpha_summ">Transparencia de la cuadricula y de los paneles de texto</string>
+    
+    <string name="pref_text_alpha">Rotulos</string>
+    <string name="pref_text_alpha_summ">Transparencia de los textos flotantes</string>
+
+    <string name="pref_text_size">Tamaño de Letra</string>
+    <string name="pref_text_size_summ">Tamaño de la letra en las ventanas de texto</string>
+    <string name="pref_text_size_dialog">Seleccione el tamaño de la letra</string>
+    <string-array name="pref_text_size_entries">
+        <item>Automatico</item>
+        <item>Muy Pequeño</item>
+        <item>Pequeño</item>
+        <item>Normal</item>
+        <item>Grande</item>
+        <item>Muy Grande</item>
+    </string-array>
+    <string-array name="pref_text_size_values">
+        <item>0</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+    </string-array>
+
+    <string name="pref_players_extra">Jugadores Extra</string>
+    <string name="pref_players_extra_summ_on">Permitir jugadores extra</string>
+    <string name="pref_players_extra_summ_off">Limite normal de 9 jugadores</string>
+
+    <string name="pref_players_list">Jugadores</string>
+    <string name="pref_players_list_summ">Cambiar dificultad, nombre, o color de los jugadores</string>
+
+    <string name="pref_turns">Turnos</string>
+    <string name="pref_turns_summ">Duracion de la partida</string>
+
+    <string name="pref_reset">Reiniciar preferencias</string>
+    <string name="pref_reset_summ">Restaurar todas las preferencias a su valor inicial</string>
+    <string name="pref_reset_dialog">¿Restablecer valores por defecto?</string>
+    <string name="pref_reset_no">No, MANTENER valores actuales</string>
+    <string name="pref_reset_yes">Si, RESTAURAR valores por defecto</string>
+
+    <!-- Start game screen -->
+
+    <string name="pref_radius">Tamaño</string>
+    <string name="pref_radius_summ">Radio de la galaxia</string>
+    <string name="pref_radius_dialog">Seleccione el tamaño de la galaxia</string>
+    <string-array name="pref_radius_entries">
+        <item>Pequeño</item>
+        <item>Mediano</item>
+        <item>Grande</item>
+        <item>Personalizado</item>
+    </string-array>
+    <string-array name="pref_radius_values">
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+        <item>0</item>
+    </string-array>
+
+    <string name="pref_density">Planetas</string>
+    <string name="pref_density_summ">Cantidad de planetas</string>
+    <string name="pref_density_dialog">Seleccione la densidad de planetas en la galaxia</string>
+    <string-array name="pref_density_entries">
+        <item>25%</item>
+        <item>50%</item>
+        <item>75%</item>
+        <item>100%</item>
+        <item>125%</item>
+        <item>150%</item>
+        <item>Personalizado</item>
+    </string-array>
+    <string-array name="pref_density_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>0</item>
+    </string-array>
+
+    <string name="pref_positions">Colocacion</string>
+    <string name="pref_positions_summ">Posicion inicial de los planetas origen de los jugadores</string>
+    <string name="pref_positions_dialog">Seleccione la distancia de los jugadores al centro de la galaxia</string>
+    <string-array name="pref_positions_entries">
+        <item>Automatico</item>
+        <item>10%</item>
+        <item>20%</item>
+        <item>30%</item>
+        <item>40%</item>
+        <item>50%</item>
+        <item>60%</item>
+        <item>70%</item>
+        <item>80%</item>
+        <item>90%</item>
+        <item>100%</item>
+    </string-array>
+    <string-array name="pref_positions_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string name="pref_fow">Niebla de Guerra</string>
+    <string name="pref_fow_summ">Conocimiento de la situacion de las flotas enemigas</string>
+    <string name="pref_fow_dialog">Seleccione la informacion disponible sobre las flotas enemigas</string>
+    <string-array name="pref_fow_entries">
+        <item>Ocultar Todo</item>
+        <item>Mostrar Amenazas</item>
+        <item>Mostrar Todo</item>
+    </string-array>
+    <string-array name="pref_fow_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="pref_defense">Defensa</string>
+    <string name="pref_defense_summ">Multiplica la efectividad de las naves al defender su planeta</string>
+    <string name="pref_defense_dialog">Seleccione la forma de calcular el valor de defensa</string>
+    <string-array name="pref_defense_entries">
+        <item>Deshabilitado</item>
+        <item>Segun Jugador</item>
+        <item>Segun Planeta</item>
+    </string-array>
+    <string-array name="pref_defense_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="pref_upkeep">Mantenimiento</string>
+    <string name="pref_upkeep_summ">Coste de mantenimiento de cada nave</string>
+    <string name="pref_upkeep_dialog">Seleccione lo que cuesta mantener en funcionamiento cada nave</string>
+    <string-array name="pref_upkeep_entries">
+        <item>Deshabilitado</item>
+        <item>1/10</item>
+        <item>1/5</item>
+        <item>1/2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="pref_upkeep_values">
+        <item>0</item>
+        <item>10</item>
+        <item>5</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+
+<!--
+    <string name="pref_production">Produccion</string>
+    <string name="pref_production_summ">Cuando se producen las naves en los planetas</string>
+    <string name="pref_production_dialog">Seleccione cuando son producidas las naves</string>
+    <string-array name="pref_production_entries">
+        <item>Despues de las batallas</item>
+        <item>Antes de las batallas</item>
+    </string-array>
+    <string-array name="pref_production_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+ -->
+
+    <string name="pref_players">Jugadores</string>
+    <string name="pref_players_summ">Numero de jugadores</string>
+
+    <string name="pref_reassign">Reasignar</string>
+    <string name="pref_reassign_summ">Asigna el nivel IA actual a todos los jugadores. Si esta en nivel Aleatorio, entonces los entremezcla</string>
+
+    <string name="pref_global_ai">Control</string>
+    <string name="pref_global_ai_summ">Quien controla por defecto a cada jugador</string>
+    <string name="pref_global_ai_dialog">Seleccione quien controla a los nuevos jugadores que se añadan</string>
+    <string-array name="pref_global_ai_entries">
+        <item>Humano</item>
+        <item>IA</item>
+        <item>Observador</item>
+    </string-array>
+    <string-array name="pref_global_ai_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="pref_global_hostility">Nivel IA</string>
+    <string name="pref_global_hostility_summ">Nivel de agresividad por defecto de cada IA hacia los jugadores humanos</string>
+    <string name="pref_global_hostility_dialog">Seleccione el nivel de dificultad de las nuevas IAs que se añadan</string>
+    <string-array name="pref_global_hostility_entries">
+        <item>Hostil</item>
+        <item>Dificil</item>
+        <item>Normal</item>
+        <item>Facil</item>
+        <item>Amistoso</item>
+        <item>Aleatorio</item>
+    </string-array>
+    <string-array name="pref_global_hostility_values">
+        <item>4</item>
+        <item>2</item>
+        <item>0</item>
+        <item>-2</item>
+        <item>-4</item>
+        <item>-10</item>
+    </string-array>
+
+    <!-- Players list -->
+
+    <string name="pref_players_id">Id</string>
+    <string name="pref_players_id_dialog">Escriba el numero del jugador que usara estas preferencias</string>
+
+    <string name="pref_players_name">Nombre</string>
+    <string name="pref_players_name_dialog">Escriba el nombre de este jugador</string>
+
+    <string name="pref_players_ai">Control</string>
+    <string name="pref_players_ai_dialog">Seleccione quien controla este jugador</string>
+    <string-array name="pref_players_ai_entries">
+        <item>Humano</item>
+        <item>IA</item>
+        <item>Observador</item>
+    </string-array>
+    <string-array name="pref_players_ai_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="pref_players_hostility">Nivel IA</string>
+    <string name="pref_players_hostility_dialog">Seleccione el nivel de agresividad de la IA hacia los jugadores humanos</string>
+    <string-array name="pref_players_hostility_entries">
+        <item>Hostil</item>
+        <item>Dificil</item>
+        <item>Normal</item>
+        <item>Facil</item>
+        <item>Amistoso</item>
+    </string-array>
+    <string-array name="pref_players_hostility_values">
+        <item>4</item>
+        <item>2</item>
+        <item>0</item>
+        <item>-2</item>
+        <item>-4</item>
+    </string-array>
+
+    <string name="pref_players_color">Color</string>
+    <string name="pref_players_color_dialog">Seleccione el color de este jugador</string>
+    <string-array name="pref_players_color_entries">
+        <item>Rojo</item>
+        <item>Verde</item>
+        <item>Azul</item>
+        <item>Amarillo</item>
+        <item>Cian</item>
+        <item>Magenta</item>
+        <item>Rosa</item>
+        <item>Lima</item>
+        <item>Azur</item>
+        <item>Naranja</item>
+        <item>Primavera</item>
+        <item>Violeta</item>
+    </string-array>
+    <string-array name="pref_players_color_values">
+        <item>#cc0000</item>
+        <item>#00cc00</item>
+        <item>#0000cc</item>
+        <item>#cccc00</item>
+        <item>#00cccc</item>
+        <item>#cc00cc</item>
+        <item>#cc0066</item>
+        <item>#66cc00</item>
+        <item>#0066cc</item>
+        <item>#cc6600</item>
+        <item>#00cc66</item>
+        <item>#6600cc</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PlanetCon</string>
+    <string name="title_activity_game">Juego</string>
+    <string name="title_activity_start">Inicio</string>
+    <string name="title_activity_settings">Ajustes</string>
+    <string name="title_activity_help">Ayuda</string>
+
+    <string name="open_menu">MENU</string>
+    <string name="end_turn">TURNO</string>
+    <string name="end_turn_AI">PENSANDO</string>
+    <string name="ships_send">ENVIAR</string>
+    <string name="ships_plus">+</string>
+    <string name="ships_minus">-</string>
+
+    <string name="menu_settings">Ajustes</string>
+    <string name="menu_continue">Continuar Partida</string>
+    <string name="menu_new">Nueva Partida</string>
+    <string name="menu_load">Cargar Partida</string>
+    <string name="menu_delete">Borrar Partida</string>
+    <string name="menu_save">Salvar Partida</string>
+    <string name="menu_save_as">Salvar Como</string>
+    <string name="menu_restart">Reiniciar Turno</string>
+    <string name="menu_help">Ayuda</string>
+    <string name="menu_exit">Salir</string>
+
+    <string name="dialog_options">Opciones</string>
+    <string name="dialog_exit">¿Abandonar partida?</string>
+    <string name="dialog_restart">¿Reiniciar este turno?</string>
+    <string name="dialog_load">Cargar Archivo</string>
+    <string name="dialog_save">Salvar En Archivo</string>
+    <string name="dialog_save_as">Salvar Como</string>
+    <string name="dialog_overwrite">El fichero ya existe</string>
+    <string name="dialog_overwrite_confirm">¿Sobreescribir?</string>
+    <string name="dialog_delete">Borrar Archivo</string>
+    <string name="dialog_delete_confirm">¿Eliminar este archivo?</string>
+    <string name="dialog_turn">Su Turno</string>
+    <string name="dialog_starting">Cargando...</string>
+    <string name="dialog_starting_wait">Por favor espere...</string>
+    <string name="dialog_yes">Si</string>
+    <string name="dialog_no">No</string>
+    <string name="dialog_ok">Aceptar</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="dialog_end">Salir</string>
+    <string name="dialog_continue">Continuar</string>
+    <string name="dialog_back">Atras</string>
+    <string name="dialog_revert">Deshacer</string>
+    <string name="dialog_start">Empezar</string>
+    <string name="dialog_apply">Aplicar</string>
+    <string name="dialog_color">Elija un Color</string>
+    <string name="dialog_tip">Siguiente Consejo</string>
+
+    <string name="msg_loaded">Partida Cargada</string>
+    <string name="msg_loaded_error">Error al cargar la partida</string>
+    <string name="msg_saved">Partida Salvada</string>
+    <string name="msg_saved_error">Error al salvar la partida</string>
+
+    <string name="msg_game_over">Fin de la partida</string>
+    <string name="msg_victory">Enhorabuena! Has vencido</string>
+    <string name="msg_machines">Las maquinas han vencido</string>
+    <string name="msg_last_turn">Ha terminado el ultimo turno</string>
+    <string name="msg_defeat">Has sido derrotado</string>
+
+    <string name="msg_player">El jugador</string>
+    <string name="msg_player_out">ha sido eliminado</string>
+    <string name="msg_player_winner_1">domina la galaxia con</string>
+    <string name="msg_player_winner_2">de produccion, y</string>
+    <string name="msg_player_winner_3">naves</string>
+
+    <string name="info_planet">Planeta</string>
+    <string name="info_production">Produccion</string>
+    <string name="info_ships">Naves</string>
+
+    <string name="info_stats">Informe</string>
+    <string name="info_fleets">Flotas</string>
+    <string name="info_arrivals">Llegadas</string>
+    <string name="info_threats">Amenazas</string>
+
+    <string name="info_turn">Turno</string>
+    <string name="info_measure_port">Turno 00 de 00, 000 </string>
+    <string name="info_measure_land">Turno 00: 000 hacia 00 desde 00 </string>
+
+    <string name="stats_name">Jugador</string>
+    <string name="stats_production">Produccion</string>
+    <string name="stats_ships">Naves</string>
+    <string name="stats_inplanet">En Tierra</string>
+    <string name="stats_planets">Planetas</string>
+    <string name="stats_infleet">En Vuelo</string>
+    <string name="stats_fleets">Flotas</string>
+    <string name="stats_produced">Producidas</string>
+    <string name="stats_lost">Perdidas</string>
+    <string name="stats_arrived">Llegadas</string>
+
+    <string name="text_of">De</string>
+    <string name="text_from">De</string>
+    <string name="text_from_2">Desde</string>
+    <string name="text_to">A</string>
+    <string name="text_to_2">Hacia</string>
+    <string name="text_at">El</string>
+    <string name="text_vs">Vs</string>
+    <string name="text_turn">Turno</string>
+    <string name="text_reinforce">Refuerzo</string>
+    <string name="text_attack">Ataque</string>
+    <string name="text_conquer">Conquista</string>
+    <string name="text_combat">Combate</string>
+
+    <string name="player">P</string>
+
+    <string-array name="alphabet_1">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+    <string-array name="alphabet_2">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+        <item>e</item>
+        <item>f</item>
+        <item>g</item>
+        <item>h</item>
+        <item>i</item>
+        <item>j</item>
+        <item>k</item>
+        <item>l</item>
+        <item>m</item>
+        <item>n</item>
+        <item>o</item>
+        <item>p</item>
+        <item>q</item>
+        <item>r</item>
+        <item>s</item>
+        <item>t</item>
+        <item>u</item>
+        <item>v</item>
+        <item>w</item>
+        <item>x</item>
+        <item>y</item>
+        <item>z</item>
+    </string-array>
+</resources>

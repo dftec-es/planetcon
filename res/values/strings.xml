@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PlanetCon</string>
+    <string name="title_activity_game">Game</string>
+    <string name="title_activity_start">Start</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_help">Help</string>
+
+    <string name="open_menu">MENU</string>
+    <string name="end_turn">TURN</string>
+    <string name="end_turn_AI">THINKING</string>
+    <string name="ships_send">SEND</string>
+    <string name="ships_plus">+</string>
+    <string name="ships_minus">-</string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="menu_continue">Continue Game</string>
+    <string name="menu_new">New Game</string>
+    <string name="menu_load">Load Game</string>
+    <string name="menu_delete">Delete Game</string>
+    <string name="menu_save">Save Game</string>
+    <string name="menu_save_as">Save As</string>
+    <string name="menu_restart">Restart Turn</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_exit">Exit</string>
+
+    <string name="dialog_options">Options</string>
+    <string name="dialog_exit">Exit game?</string>
+    <string name="dialog_restart">Restart this turn?</string>
+    <string name="dialog_load">Load File</string>
+    <string name="dialog_save">Save To File</string>
+    <string name="dialog_save_as">Save As</string>
+    <string name="dialog_overwrite">File already exists</string>
+    <string name="dialog_overwrite_confirm">Overwrite?</string>
+    <string name="dialog_delete">Delete File</string>
+    <string name="dialog_delete_confirm">Remove this file?</string>
+    <string name="dialog_turn">Your Turn</string>
+    <string name="dialog_starting">Loading...</string>
+    <string name="dialog_starting_wait">Please wait...</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_end">Exit</string>
+    <string name="dialog_continue">Continue</string>
+    <string name="dialog_back">Back</string>
+    <string name="dialog_revert">Revert</string>
+    <string name="dialog_start">Start</string>
+    <string name="dialog_apply">Apply</string>
+    <string name="dialog_color">Pick a Color</string>
+    <string name="dialog_tip">Next Tip</string>
+
+    <string name="msg_loaded">Game Loaded</string>
+    <string name="msg_loaded_error">Error while loading game</string>
+    <string name="msg_saved">Game Saved</string>
+    <string name="msg_saved_error">Error while saving game</string>
+
+    <string name="msg_game_over">Game Over</string>
+    <string name="msg_victory">Congratulations! You won</string>
+    <string name="msg_machines">The machines have won</string>
+    <string name="msg_last_turn">This was the last turn</string>
+    <string name="msg_defeat">You have been defeated</string>
+
+    <string name="msg_player">The player</string>
+    <string name="msg_player_out">has been defeated</string>
+    <string name="msg_player_winner_1">controls the galaxy with</string>
+    <string name="msg_player_winner_2">production, and</string>
+    <string name="msg_player_winner_3">ships</string>
+
+    <string name="info_planet">Planet</string>
+    <string name="info_production">Production</string>
+    <string name="info_ships">Ships</string>
+
+    <string name="info_stats">Stats</string>
+    <string name="info_fleets">Fleets</string>
+    <string name="info_arrivals">Arrivals</string>
+    <string name="info_threats">Threats</string>
+
+    <string name="info_turn">Turn</string>
+    <string name="info_measure_port">Turn 00 of 00, 000  </string>
+    <string name="info_measure_land">Turn 00: 000 towards 00 from 00 </string>
+
+    <string name="stats_name">Player</string>
+    <string name="stats_production">Production</string>
+    <string name="stats_ships">Ships</string>
+    <string name="stats_inplanet">In Land</string>
+    <string name="stats_planets">Planets</string>
+    <string name="stats_infleet">In Flight</string>
+    <string name="stats_fleets">Fleets</string>
+    <string name="stats_produced">Produced</string>
+    <string name="stats_lost">Lost</string>
+    <string name="stats_arrived">Arrived</string>
+
+    <string name="text_of">Of</string>
+    <string name="text_from">From</string>
+    <string name="text_from_2">From</string>
+    <string name="text_to">To</string>
+    <string name="text_to_2">To</string>
+    <string name="text_at">At</string>
+    <string name="text_vs">Vs</string>
+    <string name="text_turn">Turn</string>
+    <string name="text_reinforce">Reinforce</string>
+    <string name="text_attack">Attack</string>
+    <string name="text_conquer">Conquer</string>
+    <string name="text_combat">Combat</string>
+
+    <string name="player">P</string>
+
+    <string-array name="alphabet_1">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+    <string-array name="alphabet_2">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+        <item>e</item>
+        <item>f</item>
+        <item>g</item>
+        <item>h</item>
+        <item>i</item>
+        <item>j</item>
+        <item>k</item>
+        <item>l</item>
+        <item>m</item>
+        <item>n</item>
+        <item>o</item>
+        <item>p</item>
+        <item>q</item>
+        <item>r</item>
+        <item>s</item>
+        <item>t</item>
+        <item>u</item>
+        <item>v</item>
+        <item>w</item>
+        <item>x</item>
+        <item>y</item>
+        <item>z</item>
+    </string-array>
+</resources>

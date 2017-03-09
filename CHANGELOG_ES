@@ -1,0 +1,27 @@
+# [1.1.0] 2017-02-26
+
+## Publicidad eliminada:
+- Estaba ya desactivada en la v1.0, pero la v1.1 la borra del código.
+- Ya no requiere ningún permiso de red.
+- Tamaño del archivo APK reducido.
+## IA mejorada:
+- Defiende mejor sus planetas.
+- Estima mejor las naves enemigas.
+## Algunas mejoras al interfaz de usuario:
+- Optimizado para dispositivos pequeños.
+- Mejor adaptado a dispositivos grandes.
+- Nuevo menú para cambiar las opciones de juego.
+- Nueva opción para borrar partidas salvadas.
+
+
+# [1.0.0] 2014-11-21
+
+## Características:
+- Juego de estrategia por turnos.
+- Generador aleatorio de galaxias.
+- Jugadores y planetas distribuidos uniformemente.
+- Juega contra el computador, o contra otras personas en el mismo dispositivo.
+- IA con 5 niveles de dificultad (con diferente hostilidad, pero sin hacer trampas).
+- Reglas opcionales con costes de mantenimiento, defensa planetaria, o niebla de guerra.
+- Incluye instrucciones (no necesarias para aprender a jugar).
+- Traducido al Español y al Ingles.

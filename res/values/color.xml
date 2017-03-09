@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#FFcc0000</color>
+    <color name="green">#FF00cc00</color>
+    <color name="blue">#FF0000cc</color>
+    <color name="yellow">#FFcccc00</color>
+    <color name="cyan">#FF00cccc</color>
+    <color name="magenta">#FFcc00cc</color>
+    <color name="orange">#FFcc6600</color>
+    <color name="spring">#FF00cc66</color>
+    <color name="violet">#FF6600cc</color>
+    <color name="lime">#FF66cc00</color>
+    <color name="azure">#FF0066cc</color>
+    <color name="rose">#FFcc0066</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey80">#FFcccccc</color>
+    <color name="grey60">#FF999999</color>
+    <color name="grey">#FF808080</color>
+    <color name="grey40">#FF666666</color>
+    <color name="grey20">#FF333333</color>
+    <color name="black">#FF000000</color>
+    <color name="transwhite">#66ffffff</color>
+    <color name="transgrey">#66666666</color>
+    <color name="transblack">#66000000</color>
+
+    <color name="info">#FF333333</color>
+    <color name="infotext">#FFcccccc</color>
+    <color name="grid">#FF404040</color>
+    <color name="distances">#FFcccccc</color>
+    <color name="fleets">#FF99cccc</color>
+
+</resources>
