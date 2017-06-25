@@ -1,8 +1,6 @@
 PLANET CONQUEST (PlanetCon)
 ===========================
 
-<img src="https://github.com/dftec-es/planetcon/blob/master/Screenshot.png"></a>
-
 PlanetCon es un sencillo juego de estrategia por turnos, de conquista galáctica, 
 similar al Konquest de linux. Pueden jugar desde 1 hasta 9 jugadores, contra 
 rivales IA controlados por el ordenador, o bien contra otras personas en el 
@@ -21,6 +19,8 @@ funcione en móviles de bajas prestaciones.
 <img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="90"/></a>
 <a href="https://play.google.com/store/apps/details?id=com.dftec.planetcon" target="_blank">
 <img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="90"/></a>
+
+![Screenshot](Screenshot.png?raw=true)
 
 # LICENSE
 
