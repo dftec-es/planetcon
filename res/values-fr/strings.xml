@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+	Copyright 2017 Nicola Spanti (RyDroid) <dev@nicola-spanti.info>
+	
+	This program is free software; you can redistribute it and/or
+	modify it under the terms of the GNU General Public License
+	as published by the Free Software Foundation; either version 3
+	of the License, or (at your option) any later version.
+	
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+	
+	You should have received a copy of the GNU General Public License
+	along with this program. If not, see <https://www.gnu.org/licenses/>.
+    -->
+
+    <string name="app_name">PlanetCon</string>
+    <string name="title_activity_game">Partie</string>
+    <string name="title_activity_start">Démarrer</string>
+    <string name="title_activity_settings">Paramètres</string>
+    <string name="title_activity_help">Aide</string>
+
+    <string name="open_menu">MENU</string>
+    <string name="end_turn">TOUR</string>
+    <string name="end_turn_AI">RÉFLÉCHI</string>
+    <string name="ships_send">ENVOI</string>
+
+    <string name="menu_settings">Paramètres</string>
+    <string name="menu_continue">Continuer la partie</string>
+    <string name="menu_new">Nouvelle partie</string>
+    <string name="menu_load">Charger la partie</string>
+    <string name="menu_delete">Supprimer la partie</string>
+    <string name="menu_save">Enregistrer la partie</string>
+    <string name="menu_save_as">Enregistrer sous</string>
+    <string name="menu_restart">Redémarrer le tour</string>
+    <string name="menu_help">Aide</string>
+    <string name="menu_exit">Quitter</string>
+
+    <string name="dialog_options">Options</string>
+    <string name="dialog_exit">Quitter la partie ?</string>
+    <string name="dialog_restart">Redémarrer ce tour ?</string>
+    <string name="dialog_load">Charger le fichier</string>
+    <string name="dialog_save">Enregistrer dans un fichier</string>
+    <string name="dialog_save_as">Enregistrer sous</string>
+    <string name="dialog_overwrite">Le fichier existe déjà</string>
+    <string name="dialog_overwrite_confirm">Écrire par-dessus ?</string>
+    <string name="dialog_delete">Supprimer le fichier</string>
+    <string name="dialog_delete_confirm">Supprimer ce fichier? </string>
+    <string name="dialog_turn">Votre tour</string>
+    <string name="dialog_starting">Chargement...</string>
+    <string name="dialog_starting_wait">Veuillez attendre...</string>
+    <string name="dialog_yes">Oui</string>
+    <string name="dialog_no">Non</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Annuler</string>
+    <string name="dialog_end">Quitter</string>
+    <string name="dialog_continue">Continuer</string>
+    <string name="dialog_back">Retour</string>
+    <!--<string name="dialog_revert">Revert</string>-->
+    <string name="dialog_start">Démarrer</string>
+    <string name="dialog_apply">Appliquer</string>
+    <string name="dialog_color">Choisir une couleur</string>
+    <string name="dialog_tip">Prochaine astuce</string>
+
+    <string name="msg_loaded">Partie chargée</string>
+    <string name="msg_loaded_error">Erreur pendant le chargement de la partie</string>
+    <string name="msg_saved">Partie sauvegardée</string>
+    <string name="msg_saved_error">Erreur pendant la sauvegarde de la partie</string>
+
+    <string name="msg_game_over">Partie perdue</string>
+    <string name="msg_victory">Bravo ! Vous avez gagné</string>
+    <string name="msg_machines">Les machines ont gagné</string>
+    <string name="msg_last_turn">C\'était le dernier tour</string>
+    <string name="msg_defeat">Vous avez perdu</string>
+
+    <string name="msg_player">Le joueur</string>
+    <string name="msg_player_out">a perdu</string>
+    <string name="msg_player_winner_1">contrôle la galaxie avec</string>
+    <string name="msg_player_winner_2">production, et</string>
+    <string name="msg_player_winner_3">vaisseaux</string>
+
+    <string name="info_planet">Planète</string>
+    <string name="info_production">Production</string>
+    <string name="info_ships">Vaisseaux</string>
+
+    <string name="info_stats">Stats</string>
+    <string name="info_fleets">Fleets</string>
+    <string name="info_arrivals">Arrivals</string>
+    <string name="info_threats">Threats</string>
+
+    <string name="info_turn">Tour</string>
+    <string name="info_measure_port">Tour 00 de 00, 000  </string>
+    <!--<string name="info_measure_land">Tour 00: 000 towards 00 de 00 </string>-->
+
+    <string name="stats_name">Joueur/Joueuse</string>
+    <string name="stats_production">Production</string>
+    <string name="stats_ships">Vaisseaux</string>
+    <!--<string name="stats_inplanet">In Land</string>-->
+    <string name="stats_planets">Planètes</string>
+    <!--<string name="stats_infleet">In Flight</string>-->
+    <string name="stats_fleets">Vols</string>
+    <string name="stats_produced">Produit</string>
+    <string name="stats_lost">Perdu</string>
+    <string name="stats_arrived">Arrivé</string>
+
+    <string name="text_of">De</string>
+    <string name="text_from">Depuis</string>
+    <string name="text_from_2">Depuis</string>
+    <string name="text_to">À</string>
+    <string name="text_to_2">À</string>
+    <!--<string name="text_at">At</string>-->
+    <string name="text_vs">Contre</string>
+    <string name="text_turn">Tour</string>
+    <!--<string name="text_reinforce">Reinforce</string>-->
+    <string name="text_attack">Attaque</string>
+    <string name="text_conquer">Conquérir</string>
+    <string name="text_combat">Combat</string>
+</resources>
