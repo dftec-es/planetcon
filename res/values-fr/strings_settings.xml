@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!--
+	Copyright 2017 Nicola Spanti (RyDroid) <dev@nicola-spanti.info>
+	
+	This program is free software; you can redistribute it and/or
+	modify it under the terms of the GNU General Public License
+	as published by the Free Software Foundation; either version 3
+	of the License, or (at your option) any later version.
+	
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+	
+	You should have received a copy of the GNU General Public License
+	along with this program. If not, see <https://www.gnu.org/licenses/>.
+    -->
+
+    <!-- Strings related to Settings -->
+
+    <string name="pref_ui">Interface utilisateur/utilisatrice</string>
+    <string name="pref_game_options">Options du jeu</string>
+    <string name="pref_default">Préférences</string>
+
+    <string name="pref_galaxy_menu">Customiser la galaxie</string>
+    <string name="pref_rules_menu">Customiser les règles</string>
+    <string name="pref_players_menu">Customiser les joueurs/joueuses</string>
+
+    <!-- Preferences screen -->
+
+    <string name="pref_autosave">Sauvegarde automatique</string>
+    <string name="pref_autosave_summ_on">Le jeu est sauvegardé automatiquement sur la carte SD à la fin du tour</string>
+    <string name="pref_autosave_summ_off">Pas sauvegardé automatiquement sur la carte SD</string>
+
+    <string name="pref_tips">Astuces</string>
+    <string name="pref_tips_summ_on">Des astuces sont montrées à chaque début de tour</string>
+    <string name="pref_tips_summ_off">Aucune astuce n\'est montrée</string>
+
+    <string name="pref_screen">Restez allumé</string>
+    <string name="pref_screen_summ_on">L\'écran reste allumé tant que le plateau de jeu est visible</string>
+    <string name="pref_screen_summ_off">L\'écran se met en veille quand il est inactif, comme d\'habitude</string>
+
+    <string name="pref_background">Fond</string>
+    <string name="pref_background_summ_on">Image de fond : montré</string>
+    <string name="pref_background_summ_off">Image de fond : caché</string>
+
+    <string name="pref_scroll">Scroll</string>
+    <string name="pref_scroll_summ_on">Geste pour scroller le plateau : autorisé</string>
+    <string name="pref_scroll_summ_off">Geste pour scroller le plateau : bloqué</string>
+
+    <string name="pref_zoom">Zoom</string>
+    <string name="pref_zoom_summ">Valeur du zoom avec un appui double</string>
+
+    <string name="pref_grid_alpha">Paneaux</string>
+    <string name="pref_grid_alpha_summ">Transparence de la grille et les boites textuelles</string>
+
+    <string name="pref_text_alpha">Étiquettes</string>
+    <string name="pref_text_alpha_summ">Transparence des textes des étiquettes</string>
+
+    <string name="pref_text_size">Taille de la police</string>
+    <string name="pref_text_size_summ">Taille la police dans les vues textuelles</string>
+    <string name="pref_text_size_dialog">Choisir la taille de la police</string>
+    <string-array name="pref_text_size_entries">
+        <item>Automatique</item>
+        <item>Très petit</item>
+        <item>Petit</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Très large</item>
+    </string-array>
+
+    <string name="pref_players_extra">Joueurs/Joueuses supplémentaires</string>
+    <string name="pref_players_extra_summ_on">Permettre des joueurs/joueuses supplémentaires</string>
+    <string name="pref_players_extra_summ_off">Limite par défaut de 9 joueurs/joueuses</string>
+
+    <string name="pref_players_list">Joueurs/Joueuses</string>
+    <string name="pref_players_list_summ">Changer la difficulté, le nom, ou la couleur des joueurs/joueuses</string>
+
+    <string name="pref_turns">Tours</string>
+    <string name="pref_turns_summ">Durée de la partie</string>
+
+    <string name="pref_reset">Remettre aux valeurs par défaut</string>
+    <string name="pref_reset_summ">Remettre tous les paramètres à leurs valeurs par défaut</string>
+    <string name="pref_reset_dialog">Remettre tous les paramètres à leurs valeurs par défaut ?</string>
+    <string name="pref_reset_no">Non, GARDER les valeurs actuelles</string>
+    <string name="pref_reset_yes">OUI, REMETTRE PAR DÉFAUT toutes les valeurs</string>
+
+    <!-- Start game screen -->
+
+    <string name="pref_radius">Taille</string>
+    <string name="pref_radius_summ">Rayon de la galaxie</string>
+    <string name="pref_radius_dialog">Choisir la taille de la galaxie</string>
+    <string-array name="pref_radius_entries">
+        <item>Petit</item>
+        <item>Moyen</item>
+        <item>Large</item>
+        <item>Personnalisé</item>
+    </string-array>
+
+    <string name="pref_density">Planètes</string>
+    <string name="pref_density_summ">Nombre de planètes</string>
+    <string name="pref_density_dialog">Choisir la densité des planètes dans la galaxie</string>
+
+    <string name="pref_positions">Placement</string>
+    <string name="pref_positions_summ">Position de départ des planètes de base des joueurs/joueuses</string>
+    <string name="pref_positions_dialog">Choisir la distance des joueurs/joueuses vis-à-vis du centre de la galaxie</string>
+
+    <!--<string name="pref_fow">Fog of War</string>
+    <string name="pref_fow_summ">Situational awareness of enemy fleets</string>-->
+    <string name="pref_fow_dialog">Choisir l\'information disponible à propos des flottes ennemis</string>
+    <string-array name="pref_fow_entries">
+        <item>Tous inconnus</item>
+        <item>Montrer les dangers</item>
+        <item>Tous connus</item>
+    </string-array>
+
+    <string name="pref_defense">Défense</string>
+    <!--<string name="pref_defense_summ">Multiplier to the effectiveness of the ships defending its planet</string>-->
+    <string name="pref_defense_dialog">Choisir comment calculler la valeur de la défense</string>
+    <string-array name="pref_defense_entries">
+        <item>Désactivé</item>
+        <item>Par joueur/joueuse</item>
+        <item>Par planète</item>
+    </string-array>
+
+    <!--<string name="pref_upkeep">Upkeep</string>
+    <string name="pref_upkeep_summ">Upkeep cost of each ship</string>
+    <string name="pref_upkeep_dialog">Choose the upkeep cost of each active ship</string>-->
+    <string-array name="pref_upkeep_entries">
+        <item>Désactivé</item>
+    </string-array>
+
+<!--
+    <string name="pref_production">Production</string>
+    <string name="pref_production_summ">Temps pour que les planètes produisent des vaisseaux</string>
+    <string name="pref_production_dialog">Choisir quand les vaisseaux sont produits</string>
+    <string-array name="pref_production_entries">
+        <item>Après les batailles</item>
+        <item>Avant les batailles</item>
+    </string-array>
+ -->
+
+    <string name="pref_players">Joueurs/Joueuses</string>
+    <string name="pref_players_summ">Nombre de joueurs/joueuses</string>
+
+    <string name="pref_reassign">Ré-assigner</string>
+    <string name="pref_reassign_summ">Assigner le niveau de l\'IA actuelle à tous les joueurs/joueuses. Si c\'est défini aléatoirement, il y a ensuite un mélange</string>
+
+    <string name="pref_global_ai">Contrôle</string>
+    <string name="pref_global_ai_summ">Qui contrôle par défaut chaque joueur/joueuse</string>
+    <string name="pref_global_ai_dialog">Choisir qui contrôle les nouveaux/nouvelles joueurs/joueuses ajouté·e·s</string>
+   <string-array name="pref_global_ai_entries">
+        <item>Humain</item>
+        <item>IA</item>
+        <item>Observateur</item>
+    </string-array>
+
+    <string name="pref_global_hostility">Niveau IA</string>
+    <string name="pref_global_hostility_summ">Niveau par défaut d\'aggrésivité de chaque IA vis-à-à-vis des joueurs/joueuses humains</string>
+    <string name="pref_global_hostility_dialog">Choisir le niveau de difficulté des nouvelles IAs ajoutées</string>
+    <string-array name="pref_global_hostility_entries">
+        <item>Hostile</item>
+        <item>Hard</item>
+        <item>Normal</item>
+        <item>Easy</item>
+        <item>Friendly</item>
+        <item>Random</item>
+    </string-array>
+
+    <!-- Players list -->
+
+    <string name="pref_players_id">Id</string>
+    <string name="pref_players_id_dialog">Entrer le numéro du joueur qui va utiliser ces préférences</string>
+
+    <string name="pref_players_name">Nom</string>
+    <string name="pref_players_name_dialog">Entrer le nom du joueur/joueuse</string>
+
+    <string name="pref_players_ai">Contrôle</string>
+    <string name="pref_players_ai_dialog">Choisir qui contrôle le joueur/joueuse</string>
+    <string-array name="pref_players_ai_entries">
+        <item>Humain</item>
+        <item>IA</item>
+        <item>Observateur</item>
+    </string-array>
+
+</resources>
