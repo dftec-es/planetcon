@@ -34,8 +34,7 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 For more details, see the GNU General Public License, that you can find 
-in the file LICENSE, or at <http://www.gnu.org/licenses/>.
+in the file LICENSE, or at <https://www.gnu.org/licenses/>.
 
 The source code of this program includes files with a more permissive license: 
 Apache License, Version 2.0. See the header of each file for more details.
-
