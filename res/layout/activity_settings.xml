@@ -157,7 +157,7 @@
                     android:entries="@array/pref_positions_entries"
                     android:entryValues="@array/pref_positions_values"
                     android:defaultValue="0" />
-            </PreferenceScreen> 
+            </PreferenceScreen>
 
             <PreferenceScreen
                 android:title="@string/pref_rules_menu">
@@ -228,7 +228,7 @@
                         android:entryValues="@array/pref_players_hostility_values"
                         android:defaultValue="0" />
                 </PreferenceCategory>
-                
+
                 <PreferenceCategory
                     android:title="@string/pref_players_rest">
                     <ListPreference

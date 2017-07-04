@@ -262,7 +262,7 @@ public class PlayerData implements Comparable<PlayerData> {
         // final color
         this.hsv[1] = 1;
         this.hsv[2] = COLOR_VALUE;
-        this.color = Color.HSVToColor(this.hsv);        
+        this.color = Color.HSVToColor(this.hsv);
     }
 
     /**

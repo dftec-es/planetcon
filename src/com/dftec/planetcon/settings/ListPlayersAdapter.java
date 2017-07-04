@@ -1,12 +1,12 @@
 /*
  * Copyright 2014 David Fernandez <dftec.es@gmail.com>
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *     http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -138,7 +138,7 @@ public class ListPlayersAdapter extends BaseAdapter {
             }
         });
         holder.idView.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            // Store the value when the EditText view loses the focus 
+            // Store the value when the EditText view loses the focus
             public void onFocusChange(View view, boolean hasFocus) {
                 String sId = ((EditText) view).getText().toString();
                 if (isValidId(sId)) {
@@ -149,7 +149,7 @@ public class ListPlayersAdapter extends BaseAdapter {
             }
         });
         holder.nameView.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            // Store the value when the EditText view loses the focus 
+            // Store the value when the EditText view loses the focus
             public void onFocusChange(View view, boolean hasFocus) {
                 String sName = ((EditText) view).getText().toString();
                 if (sName.equals("")) {

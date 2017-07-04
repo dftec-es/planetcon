@@ -57,7 +57,7 @@ import com.dftec.planetcon.R;
 public class NumberPicker extends LinearLayout implements OnClickListener,
         OnFocusChangeListener, OnLongClickListener {
 
-	// PRIVATE ====================================================================================
+    // PRIVATE ====================================================================================
 
     private static final int DEFAULT_START = 0;
     private static final int DEFAULT_END = 99;
@@ -97,7 +97,7 @@ public class NumberPicker extends LinearLayout implements OnClickListener,
     private boolean mIncrement;
     private boolean mDecrement;
 
-	// PUBLIC =====================================================================================
+    // PUBLIC =====================================================================================
 
     /**
      * Value change listener.
@@ -353,7 +353,7 @@ public class NumberPicker extends LinearLayout implements OnClickListener,
         mSpeed = speed;
     }
 
-	// PACKAGE ====================================================================================
+    // PACKAGE ====================================================================================
 
     /**
      * Cancel increment handler (when increment button clicked).
@@ -376,17 +376,17 @@ public class NumberPicker extends LinearLayout implements OnClickListener,
      */
     static class NumberPickerButton extends ImageButton {
 
-		// PRIVATE --------------------------------------------------------------------------------
+        // PRIVATE --------------------------------------------------------------------------------
 
         private NumberPicker mNumberPicker;
 
-		// PUBLIC ---------------------------------------------------------------------------------
+        // PUBLIC ---------------------------------------------------------------------------------
 
         public void setNumberPicker(NumberPicker picker) {
             mNumberPicker = picker;
         }
 
-		// OVERRIDDEN -----------------------------------------------------------------------------
+        // OVERRIDDEN -----------------------------------------------------------------------------
 
         public NumberPickerButton(Context context, AttributeSet attrs,
                 int defStyle) {
@@ -422,7 +422,7 @@ public class NumberPicker extends LinearLayout implements OnClickListener,
             return super.onKeyUp(keyCode, event);
         }
 
-		// PRIVATE --------------------------------------------------------------------------------
+        // PRIVATE --------------------------------------------------------------------------------
 
         private void cancelLongpressIfRequired(MotionEvent event) {
             if ((event.getAction() == MotionEvent.ACTION_CANCEL)
@@ -440,7 +440,7 @@ public class NumberPicker extends LinearLayout implements OnClickListener,
         }
     }
 
-	// OVERRIDDEN =================================================================================
+    // OVERRIDDEN =================================================================================
 
     /**
      * Set the orientation of the number picker.
@@ -521,16 +521,16 @@ public class NumberPicker extends LinearLayout implements OnClickListener,
         }
     }
 
-	// PRIVATE ====================================================================================
+    // PRIVATE ====================================================================================
 
     private void changeCurrent(int current) {
         int val = current;
         // cyclic picker
-//		if (val > mEnd) {
-//			val = mStart;
-//		} else if (val < mStart) {
-//			val = mEnd;
-//		}
+//        if (val > mEnd) {
+//            val = mStart;
+//        } else if (val < mStart) {
+//            val = mEnd;
+//        }
         setCurrent(val);
     }
 

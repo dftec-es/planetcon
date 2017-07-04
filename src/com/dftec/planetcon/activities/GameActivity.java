@@ -1,12 +1,12 @@
 /*
  * Copyright 2014 David Fernandez <dftec.es@gmail.com>
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *     http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -365,7 +365,7 @@ public class GameActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        
+
         // The preferences returned if the request code is what we had given earlier in startActivityForResult
         if (requestCode == SettingsActivity.INTENT_CODE_SETTINGS) {
             // Apply game options, in case they were changed by settings activity
@@ -1230,7 +1230,7 @@ public class GameActivity extends Activity {
         } else {
             // load value from preferences
             mGalaxy.setMaxTurns(getNumericPref(SettingsActivity.KEY_TURNS, SettingsActivity.DEF_TURNS, 0, SettingsActivity.MAX_TURNS));
-            
+
         }
         for (nPlayer = 1; nPlayer < mGalaxy.getPlayers().size(); nPlayer++) {
             playerStats = mGalaxy.getPlayerData(nPlayer);
@@ -1308,7 +1308,7 @@ public class GameActivity extends Activity {
                 value = 1 - (float)(nPlayer) / (mGalaxy.getNumPlayers());
                 playerStats.setPlayerHSV(-1, -1, (1 + value) / 2);
             }
-            
+
             if (commit) {
                 prefsEditor.commit();
             }
@@ -1328,7 +1328,7 @@ public class GameActivity extends Activity {
         if ( (planetFrom != null) && (planetTo != null) ) {
             // If a fleet was sent in same turn from same origin to same destination, remove it
             // (even if the new fleet has no ships)
-            
+
             if (previousFleet != null) {
                 planetFrom.shipsNow += previousFleet.ships;
                 mGalaxy.getFleets().remove(previousFleet);
@@ -1413,7 +1413,7 @@ public class GameActivity extends Activity {
                     continueTurn(playerStats);
                 } else {
                     startAiTurn(playerStats);
-                } 
+                }
             }
             // Human or Idle
             else {

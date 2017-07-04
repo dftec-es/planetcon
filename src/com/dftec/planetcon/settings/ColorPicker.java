@@ -79,7 +79,7 @@ public class ColorPicker extends View {
     private float[] mColorHSV;   //Currently selected color
     private float[] mHSV;        //Temp HSV color
     private double[] mXY;        //Temp x and y coordinates
-    
+
 
     public ColorPicker(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);

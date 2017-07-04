@@ -39,13 +39,13 @@ import android.widget.LinearLayout;
  * Dependent preferences will be disabled when value is {@code 0}.<br>
  * <br>
  * <i>Depends on</i>: {@link NumberPicker}
- * 
+ *
  * @author Viktor Reiser &lt;<a href="mailto:viktorreiser@gmx.de">viktorreiser@gmx.de</a>&gt;
  */
 public class NumberPickerPreference extends DialogPreference {
 
-	// PRIVATE ====================================================================================
-	
+    // PRIVATE ====================================================================================
+
     /** Number picker view which contains input. */
     private NumberPicker mPicker;
 
@@ -55,11 +55,11 @@ public class NumberPickerPreference extends DialogPreference {
     /** Value of preference. */
     private int mNumber;
 
-	// PUBLIC =====================================================================================
-	
+    // PUBLIC =====================================================================================
+
     /**
      * Get {@link NumberPicker} containing input of preference.
-     * 
+     *
      * @return {@link NumberPicker} containing input of preference
      */
     public NumberPicker getNumberPicker() {
@@ -68,7 +68,7 @@ public class NumberPickerPreference extends DialogPreference {
 
     /**
      * Saves number to {@link SharedPreferences}.
-     * 
+     *
      * @param number
      *            number to save
      */
@@ -88,15 +88,15 @@ public class NumberPickerPreference extends DialogPreference {
 
     /**
      * Gets current set number of preference.
-     * 
+     *
      * @return current preference value
      */
     public int getNumber() {
         return mNumber;
     }
 
-	// OVERRIDDEN =================================================================================
-	
+    // OVERRIDDEN =================================================================================
+
     public NumberPickerPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
         initialize(attrs);
@@ -236,8 +236,8 @@ public class NumberPickerPreference extends DialogPreference {
         }
     }
 
-	// PRIVATE ====================================================================================
-	
+    // PRIVATE ====================================================================================
+
     /**
      * Initialize preference view and it's behavior.
      */
@@ -261,7 +261,7 @@ public class NumberPickerPreference extends DialogPreference {
 
     /**
      * Used to re/store state of preference.
-     * 
+     *
      * @author Viktor Reiser &lt;<a href="mailto:viktorreiser@gmx.de">viktorreiser@gmx.de</a>&gt;
      */
     private static class SavedState extends BaseSavedState {

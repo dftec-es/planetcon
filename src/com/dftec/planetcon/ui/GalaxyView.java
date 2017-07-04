@@ -1,12 +1,12 @@
 /*
  * Copyright 2014 David Fernandez <dftec.es@gmail.com>
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *     http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -85,8 +85,8 @@ public class GalaxyView extends View {
     private float mZoomScale = 0;           // Zoom for Double tap
     private int mTile = 0;                  // Size of one tile: width=height
     private int mSize = 0;                  // Size of the board: width=height
-    private Rect mBoundsView;               // Canvas coordinates of the current viewport (scaled/translated) 
-    private Rect mBoundsDraw;               // Canvas coordinates of the total drawable canvas 
+    private Rect mBoundsView;               // Canvas coordinates of the current viewport (scaled/translated)
+    private Rect mBoundsDraw;               // Canvas coordinates of the total drawable canvas
 
     // Draw variables
     private boolean mDrawingDistances = false;
@@ -95,7 +95,7 @@ public class GalaxyView extends View {
     private boolean mDrawingFleets = true;
     private boolean mDrawingArrivals = false;
     private boolean mDrawingThreats = false;
-    
+
     private int mGridAlpha = 0;
     private int mTextAlpha = 0;
     private int mTextSize = 0;
@@ -167,7 +167,7 @@ public class GalaxyView extends View {
         mPoint = new float[2];
         mVertices = new float[8];
         mColors = new int[9];
-        
+
         mArrowPath = new Path();
         mBoundsView = new Rect();
         mBoundsDraw = new Rect();
@@ -244,7 +244,7 @@ public class GalaxyView extends View {
 
         // Clips the drawing operations to the window
         //canvas.clipRect(mBoundsView);
-        
+
         // [...] stuff drawn with matrix transformations
         drawGrid(canvas);
         drawPlanets(canvas);
@@ -261,7 +261,7 @@ public class GalaxyView extends View {
 
     }
 
-    @Override 
+    @Override
     public boolean onTouchEvent(MotionEvent event) {
         boolean scale = mScaleGestureDetector.onTouchEvent(event);
         boolean gesture = mGestureDetector.onTouchEvent(event);
@@ -357,7 +357,7 @@ public class GalaxyView extends View {
             //Log.d(DEBUG_TAG, "onSingleTapConfirmed: " + event.toString());
             return true;
         }
-  
+
         @Override
         public boolean onDoubleTap(MotionEvent event) {
             if (!mMultitouch) {
@@ -392,7 +392,7 @@ public class GalaxyView extends View {
                 invalidate();
             }
         }
-  
+
         @Override
         public void onShowPress(MotionEvent event) {
         }
@@ -554,23 +554,23 @@ public class GalaxyView extends View {
         x = tile*i + textPadding;
         y = tile*(j+1) - textPadding;
         drawText(canvas, textSize, Paint.Align.LEFT,
-                Color.WHITE, 255, 
+                Color.WHITE, 255,
                 planet.sName, x, y, +padding, -padding);
 
         // Draw planet Upkeep
         x = tile*i + tile/2;
         y = tile*j - builtOffset*tile/2;
         if (sBuilt != null) {
-            drawText(canvas, textSize/2 + padding, Paint.Align.CENTER, 
-                    owner.color, 255, 
+            drawText(canvas, textSize/2 + padding, Paint.Align.CENTER,
+                    owner.color, 255,
                     sBuilt, x, y, +padding, +padding);
         }
         // Draw planet Ships
         x = tile*i + tile/2;
         y = tile*j + textSize - padding;
         if (mDrawingShips) {
-            drawText(canvas, textSize + padding, Paint.Align.CENTER, 
-                    owner.color, 255, 
+            drawText(canvas, textSize + padding, Paint.Align.CENTER,
+                    owner.color, 255,
                     sShips, x, y, +padding, +padding);
         }
         // Draw Distances to selected planet
@@ -578,15 +578,15 @@ public class GalaxyView extends View {
         y = tile*(j+1) - textPadding;
         if (mDrawingDistances) {
             sDistance = String.valueOf(planet.distance);
-            drawText(canvas, textSize*0.9f + padding, Paint.Align.RIGHT, 
-                    getColor(mContext, R.color.distances), mTextAlpha, 
+            drawText(canvas, textSize*0.9f + padding, Paint.Align.RIGHT,
+                    getColor(mContext, R.color.distances), mTextAlpha,
                     sDistance, x, y, -padding, -padding);
         }
         // Draw Defense (Ships arrived for neutral planets)
         else if (mDrawingDefenses) {
             if ( (mGalaxy.getRuleDefense() != SettingsActivity.DEFENSE_NONE) || (planet.player == 0) ){
-                drawText(canvas, textSize/2 + padding, Paint.Align.RIGHT, 
-                        getColor(mContext, R.color.infotext), 255, 
+                drawText(canvas, textSize/2 + padding, Paint.Align.RIGHT,
+                        getColor(mContext, R.color.infotext), 255,
                         sDefense, x, y, -padding, -padding);
             }
         }
@@ -938,14 +938,14 @@ public class GalaxyView extends View {
     private void increaseScroll(float distanceX, float distanceY) {
         float canvasScrollX = mCanvasScrollX + distanceX;
         float canvasScrollY = mCanvasScrollY + distanceY;
-        
+
         setCanvasScroll(canvasScrollX ,  canvasScrollY);
     }
 
     private void setScroll(float coordX, float coordY) {
         float canvasScrollX = xToScroll(coordX);
         float canvasScrollY = yToScroll(coordY);
-        
+
         setCanvasScroll(canvasScrollX ,  canvasScrollY);
     }
 
@@ -1058,15 +1058,15 @@ public class GalaxyView extends View {
     }
 
 ////// Public methods: Get //////
-    
+
      public PlanetData getFocusedPlanet() {
          return mFocusedPlanet;
      }
-    
+
      public PlanetData getSelectedPlanet() {
          return mSelectedPlanet;
      }
-     
+
      public PlanetData getTargetedPlanet() {
          return mTargetedPlanet;
      }
@@ -1188,7 +1188,7 @@ public class GalaxyView extends View {
         arcTan = Math.atan2((tx - fx), (ty - fy));
         xProjection = distance * Math.sin(arcTan);
         yProjection = distance * Math.cos(arcTan);
-            
+
         point[0] = (float)(tx - xProjection);
         point[1] = (float)(ty - yProjection);
     }

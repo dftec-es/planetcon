@@ -38,7 +38,7 @@
 
     <string name="pref_grid_alpha">Recuadros</string>
     <string name="pref_grid_alpha_summ">Transparencia de la cuadricula y de los paneles de texto</string>
-    
+
     <string name="pref_text_alpha">Rotulos</string>
     <string name="pref_text_alpha_summ">Transparencia de los textos flotantes</string>
 

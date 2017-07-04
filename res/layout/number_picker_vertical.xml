@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
 
-	<view
-		class="com.dftec.planetcon.settings.NumberPicker$NumberPickerButton"
-		android:id="@+id/increment"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:src="@drawable/ic_button_plus" />
+    <view
+        class="com.dftec.planetcon.settings.NumberPicker$NumberPickerButton"
+        android:id="@+id/increment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_button_plus" />
 
-	<EditText
-		android:id="@+id/timepicker_input"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:gravity="center"
+    <EditText
+        android:id="@+id/timepicker_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
         android:maxLines="1"
         android:minEms="2"
         android:inputType="number" />
 
-	<view
-		class="com.dftec.planetcon.settings.NumberPicker$NumberPickerButton"
-		android:id="@+id/decrement"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:src="@drawable/ic_button_minus" />
+    <view
+        class="com.dftec.planetcon.settings.NumberPicker$NumberPickerButton"
+        android:id="@+id/decrement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_button_minus" />
 
 </merge>

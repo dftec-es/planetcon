@@ -675,7 +675,7 @@ public class AIData {
             // Max Desired ships proportional to production and total average of ships
             shipsDesiredTo = (int) Math.max(planetTo.aiThreat, shipsAverageTo * planetTo.production);
             shipsNeededTo = shipsDesiredTo - planetTo.shipsNow - planetTo.aiSent - shipsSent[0];
-            // Required reinforcement if ships lower than current threat (or than desired ships) 
+            // Required reinforcement if ships lower than current threat (or than desired ships)
             if (shipsNeededTo > 0) {
                 for (PlanetData planetFrom : aOwnPlanets) {
                     if (planetFrom.index != planetTo.index) {
