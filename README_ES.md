@@ -7,6 +7,8 @@ Cada jugador comienza con un planeta que produce naves, y puede expandirse manda
 
 La mayor parte del desarrollo se dedicó a conseguir una IA que pueda ganar a un humano, contra la que sea entretenido jugar, que no sea fácil de predecir, y que funcione en móviles de bajas prestaciones.
 
+Para Android 2.2+
+
 <a href="https://f-droid.org/repository/browse/?fdid=com.dftec.planetcon" target="_blank">
 <img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="90"/></a>
 <a href="https://play.google.com/store/apps/details?id=com.dftec.planetcon" target="_blank">

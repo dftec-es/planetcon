@@ -7,6 +7,8 @@ Players start with a planet that produces a number of ships each turn, and they 
 
 Most of the development was focused on getting an AI that can beat a human, enjoyable to play, no easily predictable, and able to run on low spec mobiles.
 
+For Android 2.2+
+
 <a href="https://f-droid.org/repository/browse/?fdid=com.dftec.planetcon" target="_blank">
 <img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="90"/></a>
 <a href="https://play.google.com/store/apps/details?id=com.dftec.planetcon" target="_blank">
